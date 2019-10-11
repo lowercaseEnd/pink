@@ -1,0 +1,23 @@
+@import "../variables";
+
+
+.main-nav {
+  padding: 0;
+  margin: 0;
+  
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav__item {
+  background-color: $background-nav;
+  color: $color-text;
+
+  min-width: 320px;
+  min-height: 63px;
+
+  padding: 30px 80px;
+
+  box-shadow: 0 -1px 2px rgba(255, 255, 255, 0.15),
+  0 1px 2px #000000;
+}
