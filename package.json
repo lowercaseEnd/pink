@@ -1,0 +1,11 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "html academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Doe",
+  "license": "ISC"
+}
