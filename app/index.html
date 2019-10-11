@@ -13,19 +13,19 @@
   <header class="main-header">
     <ul class="main-nav">
       <li class="main-nav__item main-nav__active">
-        Pink
+        <a class="main-nav__link main-nav__link-active">Pink</a>
       </li>
       <li class="main-nav__item">
-        главная
+        <a class="main-nav__link">главная</a>
       </li>
       <li class="main-nav__item">
-        фотографии
+        <a class="main-nav__link" href="#">фотографии</a>
       </li>
       <li class="main-nav__item">
-        конкурс
+        <a class="main-nav__link" href="#">конкурс</a>
       </li>
       <li class="main-nav__item">
-        html Academy
+        <a class="main-nav__link" href="#">html Academy</a>
       </li>
     </ul>
     <div class="header-wrapper">
@@ -38,9 +38,15 @@
     <section class="download-links">
       <h2 class="visually-hidden">Скачайте наше приложение</h2>
       <ul class="download-links__list links-list">
-        <li class="links-list__item">Apple store</li>
-        <li class="links-list__item">App store</li>
-        <li class="links-list__item">Windows store</li>
+        <li class="links-list__item">
+          <a href="" class="links-list__link"><object type="image/svg+xml" data="img/logo-apple.svg" width="47" height="56">Apple store</object></a>
+          </li>
+        <li class="links-list__item">
+          <a href="" class="links-list__link"><object type="image/svg+xml" data="img/logo-android.svg" width="43" height="47"></object></a>
+          App store</li>
+        <li class="links-list__item">
+          <a href="" class="links-list__link"><object type="image/svg+xml" data="img/logo-microsoft.svg" width="44" height="41""></object></a>
+          Windows store</li>
       </ul>
       <p class="download-links__description">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -83,55 +89,58 @@
       <ul class="comments-section__list comments-list">
         <li class="comments-list__item">
           <strong class="comments-list__name">Николай Петров</strong>
-          <p class="comments-list__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          <p class="comments-list__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
 
           </p>
         </li>
         <li class="comments-list__item">
-            <strong class="comments-list__name">Николай Петров</strong>
-            <p class="comments-list__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          <strong class="comments-list__name">Николай Петров</strong>
+          <p class="comments-list__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
 
-            </p>
+          </p>
         </li>
         <li class="comments-list__item">
-            <strong class="comments-list__name">Николай Петров</strong>
-            <p class="comments-list__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          <strong class="comments-list__name">Николай Петров</strong>
+          <p class="comments-list__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
 
-            </p>
+          </p>
         </li>
       </ul>
       <div class="comment__wrapper-input">
         <div class="input-wrapper">
-            <input class="input-comment1" type="radio" id="comment1" name="comment" checked>
-            <input class="input-comment2" type="radio" id="comment2" name="comment">
-            <input class="input-comment3" type="radio" id="comment3" name="comment" >
+          <input class="input-comment1" type="radio" id="comment1" name="comment" checked>
+          <input class="input-comment2" type="radio" id="comment2" name="comment">
+          <input class="input-comment3" type="radio" id="comment3" name="comment">
         </div>
-          <label for="comment1" class="comment__check comment__check--one" title="влево" tabindex="1"></label>
-          <label for="comment2" class="comment__check comment__check--two" title="центр" tabindex="1"></label>
-          <label for="comment3" class="comment__check comment__check--three" title="вправо" tabindex="1"></label>
-        </div>
+        <label for="comment1" class="comment__check comment__check--one" title="влево" tabindex="1"></label>
+        <label for="comment2" class="comment__check comment__check--two" title="центр" tabindex="1"></label>
+        <label for="comment3" class="comment__check comment__check--three" title="вправо" tabindex="1"></label>
+      </div>
       </div>
     </section>
     <section class="offers-section">
       <h2 class="visually-hidden">Наши предложения</h2>
       <!--table todo-->
       <div class="comment__wrapper-input">
-          <div class="input-wrapper">
-              <input class="input-comment1" type="radio" id="offer1" name="comment" checked>
-              <input class="input-comment2" type="radio" id="offer2" name="comment">
-              <input class="input-comment3" type="radio" id="offer3" name="comment" >
-          </div>
-            <label for="offer1" class="offer_check offer__check--one" title="влево" tabindex="1"></label>
-            <label for="offer2" class="offer_check offer__check--two" title="центр" tabindex="1"></label>
-            <label for="offer3" class="offer_check offer__check--three" title="вправо" tabindex="1"></label>
-          </div>
+        <div class="input-wrapper">
+          <input class="input-comment1" type="radio" id="offer1" name="comment" checked>
+          <input class="input-comment2" type="radio" id="offer2" name="comment">
+          <input class="input-comment3" type="radio" id="offer3" name="comment">
         </div>
+        <label for="offer1" class="offer_check offer__check--one" title="влево" tabindex="1"></label>
+        <label for="offer2" class="offer_check offer__check--two" title="центр" tabindex="1"></label>
+        <label for="offer3" class="offer_check offer__check--three" title="вправо" tabindex="1"></label>
+      </div>
+      </div>
     </section>
     <footer class="main-footer">
       <h2 class="visually-hidden">Контактная интформация</h2>
       <p class="contact-us">
-          Остались вопросы?
-          Свяжитесь с нами!
+        Остались вопросы?
+        Свяжитесь с нами!
       </p>
       <ul class="contact-list">
         <li class="contact-list__item">
@@ -145,8 +154,8 @@
         <li class="contact-list__item">
           <b>приезжайте в гости</b>
           <p class="address-info">ул. Большая
-              Конюшенная, 19/8
-              </p>
+            Конюшенная, 19/8
+          </p>
         </li>
       </ul>
       <img src="img/bg-map-mobile@1x.png" alt="ул. Большая
