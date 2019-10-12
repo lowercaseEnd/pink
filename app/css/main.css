@@ -111,4 +111,13 @@ ul {
   margin: 0 auto;
 }
 
+.download-links {
+  padding-top: 200px;
+}
+
+.download-links {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat center center, url("../img/bg-back-mobile.jpg") no-repeat top #283645;
+  background-size: auto, contain;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+@import "../variables";
+
+//bg-image
+.download-links {
+  padding-top: 200px;
+}
+.download-links {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat center center,
+  url("../img/bg-back-mobile.jpg") no-repeat top $background-nav;
+  background-size: auto, contain;
+}
+// .download-links {
+//   background-image: url("../img/iphone-hand-mobile@1x.png");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size:  auto;
+// }
+// .download-links {
+//   background-color: $background-nav;
+//   background-image: url("../img/bg-back-mobile.jpg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size:  contain;
+// }
