@@ -1,53 +1,5 @@
-html, body {
-  padding: 0;
-  margin: 0;
-}
+@import "../variables";
 
-ul {
-  list-style-type: none;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-.main-nav {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.nav-wrapper--color {
-  width: 100%;
-  overflow: auto;
-  background-color: #283645;
-}
-
-.main-nav__item {
-  color: #ffffff;
-  min-width: 320px;
-  min-height: 63px;
-  padding: 30px 80px;
-  margin-bottom: 2px;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 black;
-}
-
-@media (min-width: 660px) {
-  .main-nav__item {
-    min-width: 660px;
-  }
-}
-@media (min-width: 1200px) {
-  .main-nav {
-    display: flex;
-    width: 960px;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  .main-nav__item {
-    min-width: 155px;
-  }
-}
 .links-list {
   display: flex;
   width: 320px;
@@ -56,13 +8,13 @@ ul {
   list-style: none;
   margin: 0 auto;
 }
-
 .links-list--color {
   background-color: #1d2631;
   width: 100%;
   min-height: 320px;
 }
 
+//download button
 .links-list__item:first-child {
   display: block;
   border: 3px solid #ffffff;
@@ -71,7 +23,8 @@ ul {
   margin-top: 28px;
 }
 
-.links-list__item:nth-child(n+2) {
+//margins for logos
+.links-list__item:nth-child(n + 2) {
   margin-top: 40px;
   margin-bottom: 29px;
 }
@@ -81,34 +34,30 @@ ul {
   margin-bottom: 28px;
 }
 
+//links to blocks
+//to make object clickable
 .links-list__logo {
   pointer-events: none;
 }
-
 .links-list__link {
   display: block;
 }
-
 .links-list__android {
   width: 47px;
   height: 56px;
 }
-
 .links-list__apple {
   width: 43px;
   height: 47px;
 }
-
 .links-list__windows {
   width: 44px;
   height: 41px;
 }
-
+//Text below icons
 .download-links__description {
-  color: #ffffff;
+  color: $color-text;
   text-align: center;
   width: 350px;
   margin: 0 auto;
 }
-
-/*# sourceMappingURL=main.css.map */
