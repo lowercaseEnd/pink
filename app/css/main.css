@@ -1,6 +1,8 @@
 html, body {
   padding: 0;
   margin: 0;
+  font-size: 18px;
+  line-height: 1;
 }
 
 ul {
@@ -128,6 +130,35 @@ ul {
   text-transform: uppercase;
   color: #283645;
   background-color: #ffffff;
+}
+
+.features-list__succinct {
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+.features-list__info {
+  font-size: 14px;
+}
+
+.features-list {
+  padding-top: 40px;
+  padding-left: 0;
+  min-height: 510px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.features-list__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.features-list__info--photo {
+  padding-bottom: 280px;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  background-position: center 40px;
+  background-size: contain;
 }
 
 /*# sourceMappingURL=main.css.map */
