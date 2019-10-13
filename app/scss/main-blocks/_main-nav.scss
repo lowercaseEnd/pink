@@ -12,13 +12,13 @@
 .nav-wrapper--color {
   width: 100%;
   overflow: auto;
-  background-color: $background-nav;
+  background-color: $dark-color;
 }
 .main-nav__item {
   
-  color: $color-text;
+  color: $white-color;
 
-  min-width: 320px;
+  min-width: $mobile-block;
   min-height: 63px;
 
   padding: 30px 80px;

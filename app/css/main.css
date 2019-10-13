@@ -28,7 +28,7 @@ ul {
 
 .main-nav__item {
   color: #ffffff;
-  min-width: 320px;
+  min-width: 280px;
   min-height: 63px;
   padding: 30px 80px;
   margin-bottom: 2px;
@@ -159,6 +159,27 @@ ul {
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
   background-position: center 40px;
   background-size: contain;
+}
+
+.comments-list__comment {
+  color: #283645;
+  font-size: 14px;
+  line-height: 2.1;
+}
+
+.comments-list__name {
+  line-height: 1.6;
+}
+
+.comments-list {
+  background-color: #ffffff;
+  text-align: center;
+  padding-left: 0;
+}
+
+.comments-list__item {
+  width: 280px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
