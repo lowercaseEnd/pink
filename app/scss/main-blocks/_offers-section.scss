@@ -1,0 +1,29 @@
+@import "../variables";
+
+.offers-section {
+  background-color: $bg-color;
+}
+
+.offers-table {
+  text-align: center;
+}
+.offers-table__head {
+  color: $white-color;
+}
+.offers-table__tarrif-name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+}
+.offers-table__tarrif-cost {
+  font-weight: initial;
+  line-height: 1.6;
+}
+.offers-table__header-cell {
+  background-color: $dark-color;
+}
+.offers-table__data-cell {
+  background-color: $white-color;
+  width: 153px;
+  height: 45px;
+}

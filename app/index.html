@@ -48,16 +48,16 @@
             <a href="#" class="links-list__app">Скачать приложение</a>
           </li>
           <li class="links-list__item">
-            <a href="#" class="links-list__link links-list__apple"><object type="image/svg+xml" data="img/logo-apple.svg" width="47"
-                height="56" class="links-list__logo">Apple store</object></a>
+            <a href="#" class="links-list__link links-list__apple"><object type="image/svg+xml"
+                data="img/logo-apple.svg" width="47" height="56" class="links-list__logo">Apple store</object></a>
           </li>
           <li class="links-list__item">
-            <a href="#" class="links-list__link links-list__android"><object type="image/svg+xml" data="img/logo-android.svg" width="43"
-                height="47" class="links-list__logo">App store</object></a>
+            <a href="#" class="links-list__link links-list__android"><object type="image/svg+xml"
+                data="img/logo-android.svg" width="43" height="47" class="links-list__logo">App store</object></a>
           </li>
           <li class="links-list__item">
-            <a href="#" class="links-list__link links-list__microsoft"><object type="image/svg+xml" data="img/logo-microsoft.svg" width="44"
-                height="41" class="links-list__logo">Windows store</object></a>
+            <a href="#" class="links-list__link links-list__microsoft"><object type="image/svg+xml"
+                data="img/logo-microsoft.svg" width="44" height="41" class="links-list__logo">Windows store</object></a>
           </li>
         </ul>
         <p class=" download-links__description">
@@ -133,12 +133,76 @@
           <label for="comment2" class="comment__check comment__check--two" title="центр" tabindex="1"></label>
           <label for="comment3" class="comment__check comment__check--three" title="вправо" tabindex="1"></label>
         </div>
-       
+
       </div>
     </section>
     <section class="offers-section">
       <h2 class="visually-hidden">Наши предложения</h2>
       <!--table todo-->
+      <table class="offers-section__table offers-table">
+
+        <thead class="offers-table__head">
+          <tr>
+            <th class="offers-table__header-cell">
+              <p class="offers-table__tariff-name">БАЗА</p>
+              <p class="offers-table__tariff-cost">1,99 USD</p>
+            </th>
+            <th class="offers-table__header-cell">
+              <p class="offers-table__tariff-name">Стандарт</p>
+              <p class="offers-table__tariff-cost">3,99 USD</p>
+            </th>
+            <th class="offers-table__header-cell">
+              <p class="offers-table__tariff-name">анлим</p>
+              <p class="offers-table__tariff-cost">9,99 USD</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="offers-table__body">
+          <tr>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__offer">розовый фильтр</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-ok">розовый фильтр</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-ok">розовый фильтр</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-ok">розовый фильтр</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__offer">смайлики</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-no">смайлики</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-ok">смайлики</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-ok">смайлики</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__offer">комментарии</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-no">комментарии</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-no">комментарии</p>
+            </td>
+            <td class="offers-table__data-cell">
+              <p class="offers-table__item-ok">комментарии</p>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
       <div class="comment__wrapper-input">
         <div class="input-wrapper">
           <input class="input-offer1" type="radio" id="offer1" name="offer" checked>
@@ -150,32 +214,33 @@
         <label for="offer3" class="offer_check offer__check--three" title="вправо" tabindex="1"></label>
       </div>
     </section>
-    <footer class="main-footer">
-      <h2 class="visually-hidden">Контактная интформация</h2>
-      <p class="contact-us">
-        Остались вопросы?
-        Свяжитесь с нами!
-      </p>
-      <ul class="contact-list">
-        <li class="contact-list__item">
-          <b>звоните</b>
-          <p class="address-info">+7 (812) 555-66-66</p>
-        </li>
-        <li class="contact-list__item">
-          <b>пишите</b>
-          <p class="address-info">mail@htmlacademy.ru</p>
-        </li>
-        <li class="contact-list__item">
-          <b>приезжайте в гости</b>
-          <p class="address-info">ул. Большая
-            Конюшенная, 19/8
-          </p>
-        </li>
-      </ul>
-      <img src="img/bg-map-mobile@1x.png" alt="ул. Большая
-      Конюшенная, 19/8" class="map" width="320" height="645">
-    </footer>
+
   </main>
+  <footer class="main-footer">
+    <h2 class="visually-hidden">Контактная интформация</h2>
+    <p class="contact-us">
+      Остались вопросы?
+      Свяжитесь с нами!
+    </p>
+    <ul class="contact-list">
+      <li class="contact-list__item">
+        <b>звоните</b>
+        <p class="address-info">+7 (812) 555-66-66</p>
+      </li>
+      <li class="contact-list__item">
+        <b>пишите</b>
+        <p class="address-info">mail@htmlacademy.ru</p>
+      </li>
+      <li class="contact-list__item">
+        <b>приезжайте в гости</b>
+        <p class="address-info">ул. Большая
+          Конюшенная, 19/8
+        </p>
+      </li>
+    </ul>
+    <img src="img/bg-map-mobile@1x.png" alt="ул. Большая
+      Конюшенная, 19/8" class="map" width="320" height="645">
+  </footer>
 </body>
 
 </html>
