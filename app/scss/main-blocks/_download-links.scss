@@ -2,10 +2,20 @@
 
 //bg-image
 .download-links {
-  padding-top: 540px;
-}
-.download-links {
+  position: relative;
+  padding-top: 530px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat center,
   url("../img/bg-back-mobile.jpg") no-repeat top $dark-color;
   background-size: auto, contain;
+}
+@media (min-width: $tablet-width) {
+  .download-links {
+    padding-top: 120px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet.jpg") no-repeat center;
+    background-size: auto, cover;
+  }
+  .download-links-wrapper {
+    padding-left: 50px;
+    padding-bottom: 40px;
+  }
 }

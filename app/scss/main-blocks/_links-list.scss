@@ -2,7 +2,7 @@
 
 .links-list {
   display: flex;
-  width: 320px;
+  width: $mobile-block;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
@@ -16,14 +16,22 @@
 }
 
 //download button
-.links-list__item:first-child {
+.links-list__app {
+  text-decoration: none;
+  color: $white-color;
   display: block;
-  border: 3px solid #ffffff;
+  border: 3px solid $white-color;
   border-radius: 50px;
-  padding: 21px 58px 18px 59px;
+  padding: 14px 36px 17px 36px;
   margin-top: 28px;
 }
-
+.links-list__app:hover {
+  background-color: $white-color;
+  color: $pink-color;
+}
+.links-list__app:active {
+  color: $pink-color-rgba;
+}
 //margins for logos
 .links-list__item:nth-child(n + 2) {
   margin-top: 40px;
@@ -35,8 +43,7 @@
   margin-bottom: 28px;
 }
 
-//links to blocks
-//to make object clickable
+//links on logos
 .links-list__logo {
   pointer-events: none;
 }
@@ -61,4 +68,28 @@
   text-align: center;
   width: 350px;
   margin: 0 auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  //banner on the left of image
+  .download-links__intro-banner {
+    padding-left: 60px; 
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: lighter;
+    color: $white-color;
+    display: block;
+    width: $mobile-block;
+    text-align: center;
+  }
+  //display links on the left of the phone
+  .links-list--color {
+    background-color: transparent;  
+  }
+  .links-list,
+  .download-links__description,
+  .download-links__intro-banner {
+    margin: 0 auto 0 0;
+  }
 }
