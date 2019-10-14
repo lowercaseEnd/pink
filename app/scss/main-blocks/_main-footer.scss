@@ -1,0 +1,27 @@
+@import "../variables";
+
+.contacts-wrapper {
+  text-align: center;
+  width: $mobile-block - 40px;
+  margin: 0 auto;
+}
+
+.contact-list {
+  padding: 0;
+  background-color: $white-color;
+}
+//list items
+.contact-list__action,
+.main-footer__contact-us {
+  color: $dark-color;
+}
+.main-footer__contact-us,
+.contact-list__address-info {
+  font-size: 24px;
+}
+.contact-list__action {
+  font-weight: bold;
+}
+.contact-list__address-info {
+  color: $pink-color;
+}

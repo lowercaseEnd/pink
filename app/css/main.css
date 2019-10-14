@@ -13,6 +13,11 @@ ul {
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .main-nav {
   padding: 0;
   margin: 0;
@@ -213,6 +218,35 @@ ul {
   background-color: #ffffff;
   width: 153px;
   height: 45px;
+}
+
+.contacts-wrapper {
+  text-align: center;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.contact-list {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.contact-list__action,
+.main-footer__contact-us {
+  color: #283645;
+}
+
+.main-footer__contact-us,
+.contact-list__address-info {
+  font-size: 24px;
+}
+
+.contact-list__action {
+  font-weight: bold;
+}
+
+.contact-list__address-info {
+  color: #d22856;
 }
 
 /*# sourceMappingURL=main.css.map */
