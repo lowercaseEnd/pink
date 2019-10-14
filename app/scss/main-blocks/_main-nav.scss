@@ -11,7 +11,7 @@
 
   line-height: 1.7;
 }
-.nav-wrapper--color {
+.nav {
   width: 100%;
   overflow: auto;
   background-color: $dark-color;
@@ -39,6 +39,9 @@
 .main-nav__link:active {
   color: rgba(210, 40, 86, 0.3);
 }
+
+//display nav
+
 //breakpoints
 @media (min-width: $tablet-width) {
   .main-nav__item {

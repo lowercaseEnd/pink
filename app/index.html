@@ -11,14 +11,20 @@
 
 <body>
   <header class="main-header">
-    <div class="nav-wrapper--container">
-      <div class="nav-wrapper--color">
+    <div class="header-wrapper-menu">
+      <div class="header-wrapper-logo">
+        <a class="main-nav__link main-nav__link-active">
+          <object data="img/logo-pink-white-mobile.svg" type="image/svg+xml" width="75" height="22"
+            class="main-header__logo">Pink logo</object>
+        </a>
+        <button class="header__toggle" type="button" title="Кнопка меню"></button>
+      </div>
+
+
+      <nav class="main-header__nav nav">
         <ul class="main-nav">
           <li class="main-nav__item main-nav__active">
-            <a class="main-nav__link main-nav__link-active">Pink</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">главная</a>
+            <a class="main-nav__link main-nav__link-active">главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">фотографии</a>
@@ -30,12 +36,7 @@
             <a class="main-nav__link" href="#">html Academy</a>
           </li>
         </ul>
-      </div>
-    </div>
-
-    <div class="header-wrapper">
-      <img src="img/logo-pink-white-mobile.svg" alt="логотип приложения" class="header-logo">
-      <button class="header__toggle" type="button" title="Кнопка меню"></button>
+      </nav>
     </div>
   </header>
   <main class="main-content">
