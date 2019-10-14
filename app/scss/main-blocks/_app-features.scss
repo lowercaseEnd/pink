@@ -1,9 +1,11 @@
 @import "../variables";
 
 .info-container {
-  width: 100%;
+  width: $mobile-block;
   text-align: center;
   text-transform: uppercase;
   color: $dark-color;
-  background-color: #ffffff;
+  background-color: $white-color;
+  padding: 16px 0 30px 0;
+  margin: 0 auto;
 }

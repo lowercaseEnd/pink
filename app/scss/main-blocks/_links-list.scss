@@ -19,7 +19,9 @@
 .links-list__app {
   text-decoration: none;
   color: $white-color;
+
   display: block;
+
   border: 3px solid $white-color;
   border-radius: 50px;
   padding: 14px 36px 17px 36px;
@@ -70,6 +72,10 @@
   margin: 0 auto;
 }
 
+//hide banner on smaller screens
+.download-links__intro-banner {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   //banner on the left of image
