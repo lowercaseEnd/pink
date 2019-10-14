@@ -23,6 +23,7 @@ img {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  line-height: 1.7;
 }
 
 .nav-wrapper--color {
@@ -38,6 +39,19 @@ img {
   padding: 30px 80px;
   margin-bottom: 2px;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 black;
+}
+
+.main-nav__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav__link:hover {
+  color: #d22856;
+}
+
+.main-nav__link:active {
+  color: rgba(210, 40, 86, 0.3);
 }
 
 @media (min-width: 660px) {
