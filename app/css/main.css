@@ -182,8 +182,15 @@ img {
 }
 
 @media (min-width: 660px) {
+  .links-list,
+.download-links__description,
+.download-links__intro-banner {
+    margin: 0 auto 0 0;
+  }
+
   .download-links__intro-banner {
-    padding-left: 60px;
+    margin-left: -10px;
+    padding-left: 80px;
     font-size: 40px;
     line-height: 1.2;
     font-weight: lighter;
@@ -197,10 +204,46 @@ img {
     background-color: transparent;
   }
 
-  .links-list,
-.download-links__description,
-.download-links__intro-banner {
-    margin: 0 auto 0 0;
+  .links-list__app {
+    width: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .download-links__intro-banner {
+    width: 300px;
+    font-size: 50px;
+    font-weight: lighter;
+    padding-left: 30px;
+    margin-left: 120px;
+  }
+
+  .links-list__app {
+    font-size: 21px;
+    line-height: 0.8;
+    width: 270px;
+    margin-left: 50px;
+  }
+
+  .links-list--color {
+    text-align: center;
+  }
+
+  .links-list {
+    width: 350px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+  }
+
+  .links-list__item:nth-child(2),
+.links-list__item:nth-child(3),
+.links-list__item:nth-child(4) {
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+
+  .download-links__description {
+    width: 300px;
+    margin-left: 120px;
   }
 }
 .download-links {
@@ -213,13 +256,24 @@ img {
 @media (min-width: 660px) {
   .download-links {
     padding-top: 120px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet.jpg") no-repeat center;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet.jpg") no-repeat center #283645;
     background-size: auto, cover;
   }
 
   .download-links-wrapper {
     padding-left: 50px;
     padding-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .download-links {
+    padding-top: 170px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop.jpg") no-repeat center #283645;
+    background-size: auto, cover;
+  }
+
+  .download-links-wrapper {
+    padding-bottom: 140px;
   }
 }
 .info-container {

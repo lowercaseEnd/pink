@@ -11,11 +11,21 @@
 @media (min-width: $tablet-width) {
   .download-links {
     padding-top: 120px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet.jpg") no-repeat center;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet.jpg") no-repeat center $dark-color;
     background-size: auto, cover;
   }
   .download-links-wrapper {
     padding-left: 50px;
     padding-bottom: 40px;
   }
+}
+@media (min-width: $desktop-width) {
+ .download-links {
+  padding-top: 170px;
+  background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop.jpg") no-repeat center $dark-color;
+  background-size: auto, cover;
+ } 
+ .download-links-wrapper {
+   padding-bottom: 140px;
+ }
 }
