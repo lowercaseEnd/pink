@@ -1,0 +1,21 @@
+@import "../variables";
+
+.header-wrapper-logo {
+  width: 100%;
+  margin-bottom: 1px;
+}
+@media (min-width: $desktop-width) {
+  .header__toggle {
+    display: none;
+  }
+  .header-wrapper-menu {
+    display: flex;
+    width: 940px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .header-wrapper-logo {
+    width: 150px;
+  }
+}
