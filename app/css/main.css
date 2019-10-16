@@ -39,7 +39,6 @@ img {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  align-items: center;
 }
 
 .header-wrapper-menu {
@@ -55,23 +54,18 @@ img {
   box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 black;
 }
 
-.header-wrapper-logo {
-  display: flex;
-  justify-content: space-between;
-}
-
 .main-nav__item {
   margin-top: 2px;
   margin-bottom: 1px;
   width: 100%;
 }
 
-.main-nav__item {
+.main-nav__item,
+.main-nav__link {
   color: #ffffff;
 }
 
 .main-nav__link {
-  color: #ffffff;
   text-decoration: none;
 }
 
@@ -85,11 +79,9 @@ img {
 
 @media (min-width: 1200px) {
   .main-nav {
-    display: flex;
     width: 700px;
     justify-content: space-between;
     flex-direction: row;
-    margin: 0 auto;
     padding: 47px 0 0 0;
   }
 
@@ -97,7 +89,6 @@ img {
     min-width: 155px;
     margin: 0;
     padding: 0;
-    box-shadow: none;
   }
 
   .header-wrapper-menu {
@@ -106,8 +97,8 @@ img {
     z-index: 2;
   }
 
-  .header-wrapper-logo {
-    background-color: rgba(27, 36, 47, 0.3);
+  .header-wrapper-logo,
+.main-nav__item {
     box-shadow: none;
   }
 }
@@ -275,14 +266,19 @@ img {
 }
 @media (min-width: 1200px) {
   .download-links {
-    margin-top: -200px;
+    margin-top: -110px;
     padding-top: 170px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop.jpg") no-repeat center #283645;
+    background-blend-mode: normal;
     background-size: auto, cover;
   }
 
   .download-links-wrapper {
     padding-bottom: 140px;
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 .info-container {
@@ -408,6 +404,8 @@ img {
 }
 
 .header-wrapper-logo {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 1px;
 }
@@ -425,8 +423,19 @@ img {
     margin: 0 auto;
   }
 
+  .header-wrapper-bg-color {
+    width: 100%;
+    background-color: rgba(27, 36, 47, 0.3);
+    background-blend-mode: lighten;
+  }
+
   .header-wrapper-logo {
     width: 150px;
+  }
+
+  .main-header {
+    width: 100%;
+    background-color: rgba(27, 36, 47, 0.3);
   }
 }
 

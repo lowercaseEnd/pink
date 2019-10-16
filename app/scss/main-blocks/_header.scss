@@ -1,6 +1,9 @@
 @import "../variables";
 
+//main logo with button
 .header-wrapper-logo {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 1px;
 }
@@ -14,8 +17,18 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    
+  }
+  .header-wrapper-bg-color {
+    width: 100%;
+    background-color: rgba(27, 36, 47, 0.3);
+    background-blend-mode: lighten;
   }
   .header-wrapper-logo {
     width: 150px;
+  }
+  .main-header {
+    width: 100%;
+    background-color: rgba(27, 36, 47, 0.3);
   }
 }

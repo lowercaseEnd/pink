@@ -21,12 +21,17 @@
 }
 @media (min-width: $desktop-width) {
  .download-links {
-  margin-top: -200px;
+  margin-top: -110px;
   padding-top: 170px;
-  background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop.jpg") no-repeat center $dark-color;
+  background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop.jpg") no-repeat center $dark-color;// lighten($color: $dark-color, $amount: 1);
+  background-blend-mode: normal;
   background-size: auto, cover;
  } 
  .download-links-wrapper {
    padding-bottom: 140px;
+   width: 1240px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
  }
 }
