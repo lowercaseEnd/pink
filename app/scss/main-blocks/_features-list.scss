@@ -13,18 +13,54 @@
   
   min-height: 510px;
   // background: url("../img/bg-triangle-white.svg") no-repeat #f2f2f2;
-  background-color: $bg-color;
   // background-size: contain;
   text-align: center;
 }
-.features-list__item {
+.features-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: $mobile-block;
+  
   margin: 0 auto;
 }
-
+.info-list-wrapper {
+  width: 100%;
+  background-color: $bg-color;
+}
+.features-list__item {
+  width: $mobile-block;
+}
 .features-list__info--photo {
-  padding-bottom: 280px;
+  
+  position: relative;
+}
+.features-list__info--photo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 250px;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
   background-position: center 40px;
   background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    text-align: initial;
+    justify-content: center;
+    margin-left: 50%;
+    min-height: 400px;
+  }
+  .features-list__info--photo::after {
+    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
+    top: -367px;
+    left: -116%;
+    background-size: 268px auto;
+    padding-bottom: 450px;
+    // background-position: left center;
+  }
 }

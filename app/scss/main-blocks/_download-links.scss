@@ -24,7 +24,7 @@
   }
   .download-links-wrapper {
     width: 310px;
-    padding-right: 770px;
+    margin-right: 60%;
     padding-bottom: 80px;
   }
 }
@@ -38,6 +38,6 @@
  } 
  .download-links-wrapper {
    padding-bottom: 140px;
-   width: 1240px;
+   max-width: 1240px;
  }
 }

@@ -268,7 +268,7 @@ img {
 
   .download-links-wrapper {
     width: 310px;
-    padding-right: 770px;
+    margin-right: 60%;
     padding-bottom: 80px;
   }
 }
@@ -282,7 +282,7 @@ img {
 
   .download-links-wrapper {
     padding-bottom: 140px;
-    width: 1240px;
+    max-width: 1240px;
   }
 }
 .info-container {
@@ -316,22 +316,59 @@ img {
   padding-top: 40px;
   padding-left: 0;
   min-height: 510px;
-  background-color: #f2f2f2;
   text-align: center;
 }
 
-.features-list__item {
+.features-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 280px;
   margin: 0 auto;
 }
 
+.info-list-wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.features-list__item {
+  width: 280px;
+}
+
 .features-list__info--photo {
-  padding-bottom: 280px;
+  position: relative;
+}
+
+.features-list__info--photo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 250px;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
   background-position: center 40px;
   background-size: contain;
 }
 
+@media (min-width: 660px) {
+  .features-list {
+    text-align: initial;
+    justify-content: center;
+    margin-left: 50%;
+    min-height: 400px;
+  }
+
+  .features-list__info--photo::after {
+    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
+    top: -367px;
+    left: -116%;
+    background-size: 268px auto;
+    padding-bottom: 450px;
+  }
+}
 .comments-list__comment {
   color: #283645;
   font-size: 14px;
