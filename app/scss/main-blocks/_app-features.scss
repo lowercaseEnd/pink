@@ -10,10 +10,21 @@
   margin: 0 auto;
   min-height: 200px;
 }
+.research-wrapper {
+  display: none;
+}
 @media (min-width: $tablet-width) {
   .info-container {
     width: 600px;
     font-size: 40px;
     font-weight: lighter;
+  }
+}
+@media (min-width: $desktop-width) {
+  .info-container {
+    min-height: 350px;
+  }
+  .info-list-wrapper {
+    padding-top: 130px;
   }
 }
