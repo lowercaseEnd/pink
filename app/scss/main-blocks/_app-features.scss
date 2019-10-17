@@ -1,11 +1,19 @@
 @import "../variables";
 
 .info-container {
+  font-size: 24px;
   width: $mobile-block;
   text-align: center;
-  text-transform: uppercase;
   color: $dark-color;
   background-color: $white-color;
-  padding: 16px 0 30px 0;
+  padding: 30px 0;
   margin: 0 auto;
+  min-height: 200px;
+}
+@media (min-width: $tablet-width) {
+  .info-container {
+    width: 600px;
+    font-size: 40px;
+    font-weight: lighter;
+  }
 }
