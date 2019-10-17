@@ -253,6 +253,13 @@ img {
 }
 
 @media (min-width: 660px) {
+  .download-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 660px) and (max-width: 1200px) {
   .download-links {
     padding-top: 120px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet.jpg") no-repeat center #283645;
@@ -260,8 +267,9 @@ img {
   }
 
   .download-links-wrapper {
-    padding-left: 50px;
-    padding-bottom: 40px;
+    width: 310px;
+    padding-right: 770px;
+    padding-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
@@ -269,16 +277,12 @@ img {
     margin-top: -110px;
     padding-top: 170px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop.jpg") no-repeat center #283645;
-    background-blend-mode: normal;
     background-size: auto, cover;
   }
 
   .download-links-wrapper {
     padding-bottom: 140px;
     width: 1240px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
   }
 }
 .info-container {
