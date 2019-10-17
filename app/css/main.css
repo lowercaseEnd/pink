@@ -307,6 +307,34 @@ img {
     font-size: 40px;
     font-weight: lighter;
   }
+
+  .research-container {
+    background-color: #ffffff;
+    width: 100%;
+    background: url("../img/research-bgr.svg") no-repeat;
+    background-position: 270px center;
+    background-size: 238px 277px;
+  }
+
+  .research-wrapper {
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 20%;
+  }
+
+  .app-features__reasearch-title {
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 1.2;
+    color: #000000;
+  }
+
+  .app-features__reasearch {
+    color: #283645;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 @media (min-width: 1200px) {
   .info-container {
