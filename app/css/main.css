@@ -517,6 +517,56 @@ img {
   margin: 0 auto;
 }
 
+.comments-section {
+  position: relative;
+}
+
+.label-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 40%;
+}
+
+[class*=input-comment] {
+  position: absolute;
+  opacity: 0;
+}
+
+.label-wrapper {
+  margin: 0 auto;
+  width: 75px;
+}
+
+.comment__check {
+  display: inline-block;
+  margin: auto 0;
+  padding: 3px;
+  width: 10px;
+  height: 10px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+}
+
+.input-comment1:checked ~ .label-wrapper label[for=comment1],
+.input-comment2:checked ~ .label-wrapper label[for=comment2],
+.input-comment3:checked ~ .label-wrapper label[for=comment3] {
+  background-color: #f2f2f2;
+  border: 3px solid #283645;
+}
+
+.input-comment1:checked ~ .comments-list li:nth-child(1),
+.input-comment2:checked ~ .comments-list li:nth-child(2),
+.input-comment3:checked ~ .comments-list li:nth-child(3) {
+  display: block;
+}
+
+.comments-list__item,
+.comments-list__occupation {
+  display: none;
+}
+
 .offers-section {
   background-color: #f2f2f2;
 }
