@@ -1,5 +1,6 @@
 @import "../variables";
 
+//comments
 .comments-list__comment {
   color: $dark-color;
 
@@ -25,7 +26,7 @@
 .label-wrapper {
   position: absolute;
   top: 100%;
-  left: 40%;
+  left: 46%;
 }
 [class*="input-comment"] {
   position: absolute;
@@ -46,6 +47,7 @@
   border: 3px solid $white-color;
   cursor: pointer;
 }
+//change a border of button and comment if checked
 .input-comment1:checked ~ .label-wrapper label[for="comment1"],
 .input-comment2:checked ~ .label-wrapper label[for="comment2"],
 .input-comment3:checked ~ .label-wrapper label[for="comment3"] {
@@ -60,4 +62,90 @@
 .comments-list__item,
 .comments-list__occupation {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  //display name of the user
+  .comments-list__occupation {
+    display: block;
+  }
+  .input-comment1:checked ~ .comments-list li:nth-child(1),
+  .input-comment2:checked ~ .comments-list li:nth-child(2),
+  .input-comment3:checked ~ .comments-list li:nth-child(3) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .comments-list__item,
+  .comments-list__comment {
+    width: 620px;
+  }
+  .comments-list__name,
+  .comments-list__occupation {
+    width: 180px;
+  }
+  .label-wrapper {
+    left: 48%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  //dont display three buttons
+  .label-wrapper {
+    display: none;
+    // opacity: 1;
+    top: -120%;
+    left: 18%;
+  }
+  .comment__check {
+    position: absolute;
+    border: none;
+    top: 220px;
+    width: 25px;
+    height: 45px;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+  }
+  .input-comment1:checked ~ .comments-list li:nth-child(1)::before,
+  .input-comment2:checked ~ .comments-list li:nth-child(2)::before,
+  .input-comment3:checked ~ .comments-list li:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 18%;
+    background-size: 22px 41px;
+  }
+  .input-comment1:checked ~ .comments-list li:nth-child(1)::after,
+  .input-comment2:checked ~ .comments-list li:nth-child(2)::after,
+  .input-comment3:checked ~ .comments-list li:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 78%;
+    background-size: 22px 41px;
+  }
+  .comments-list {
+    margin-top: 200px;
+  }
+  .comments-list::before {
+    content: "";
+    width: 82px;
+    height: 65px;
+    left: 47%;
+    top: -65%;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.1;
+  }
 }

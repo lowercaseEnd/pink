@@ -6,6 +6,9 @@
 
 .offers-table {
   text-align: center;
+  margin: 0 auto;
+  width: 320px;
+  overflow: hidden;
 }
 .offers-table__head {
   color: $white-color;
@@ -26,4 +29,9 @@
   background-color: $white-color;
   width: 153px;
   height: 45px;
+}
+
+//3 controls for tables
+.offers-label-wrapper {
+  margin: 0 auto;
 }
