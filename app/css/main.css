@@ -668,6 +668,7 @@ img {
   text-align: center;
   width: 995px;
   height: 280px;
+  margin: 0 auto;
 }
 
 .offers-table__head {
@@ -695,11 +696,8 @@ img {
   height: 45px;
 }
 
-.offers-label-wrapper {
-  margin: 0 auto;
-}
-
 .offers-table__data-cell {
+  text-transform: uppercase;
   height: 56px;
   width: 276px;
 }
@@ -728,14 +726,14 @@ img {
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: 210px center;
-  background-size: contain;
+  background-size: 31px 21px;
 }
 
 .offers-table__item-no {
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
   background-position: 210px center;
-  background-size: contain;
+  background-size: 27px 26px;
 }
 
 .offers-section {
@@ -747,12 +745,13 @@ img {
 .offers-label-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 70px;
+  align-items: center;
+  width: 75px;
   height: 30px;
   margin: 0 auto;
   position: absolute;
   top: 94%;
-  left: 40%;
+  left: 46%;
 }
 
 [class*=input-offer] {
@@ -761,12 +760,57 @@ img {
 
 .offer__check {
   display: block;
-  width: 3px;
-  height: 3px;
+  width: 4px;
+  height: 4px;
   padding: 3px;
-  background-color: #283645;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
+.input-offer1:checked ~ .offers-label-wrapper label[for=offer1],
+.input-offer2:checked ~ .offers-label-wrapper label[for=offer2],
+.input-offer3:checked ~ .offers-label-wrapper label[for=offer3] {
+  background-color: #f2f2f2;
+  border: 3px solid #283645;
+}
+
+.input-offer1:checked ~ .offers-table {
+  transform: translateX(-135px);
+  transition: 0.9s;
+}
+
+.input-offer2:checked ~ .offers-table {
+  transform: translateX(-415px);
+  transition: 0.9s;
+}
+
+.input-offer3:checked ~ .offers-table {
+  transform: translateX(-695px);
+  transition: 0.9s;
+}
+
+@media (min-width: 660px) {
+  .offers-label-wrapper {
+    display: none;
+  }
+
+  .offers-table__item-mobile {
+    font-size: 0;
+  }
+
+  .offers-table__item-ok,
+.offers-table__item-no {
+    background-position-x: center;
+  }
+}
+@media (min-width: 1200px) {
+  .offers-table__header-cell,
+.offers-table__data-cell {
+    width: 234px;
+  }
+}
 .contacts-wrapper {
   text-align: center;
   width: 240px;

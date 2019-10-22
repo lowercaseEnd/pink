@@ -8,6 +8,7 @@
   text-align: center;
   width: 995px;
   height: 280px;
+  margin: 0 auto;
   // border-collapse: collapse;
  
 }
@@ -33,13 +34,9 @@
   height: 45px;
 }
 
-//3 controls for tables
-.offers-label-wrapper {
-  margin: 0 auto;
-}
-
 //offers cells
 .offers-table__data-cell {
+  text-transform: uppercase;
   height: 56px;
   width: 276px;
 }
@@ -70,16 +67,16 @@
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: 210px center;
-  background-size: contain;
+  background-size: 31px 21px;
 }
 .offers-table__item-no {
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
   background-position: 210px center;
-  background-size: contain;
+  background-size: 27px 26px;
 }
 
-//
+//controls for table
 .offers-section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -88,20 +85,64 @@
 .offers-label-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 70px;
+  align-items: center;
+  width: 75px;
   height: 30px;
   margin: 0 auto;
   position: absolute;
   top: 94%;
-  left: 40%;
+  left: 46%;
 }
 [class*="input-offer"] {
   display: none;
 }
 .offer__check {
   display: block;
-  width: 3px;
-  height: 3px;
+  width: 4px;
+  height: 4px;
   padding: 3px;
-  background-color: $dark-color;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.input-offer1:checked ~ .offers-label-wrapper label[for="offer1"],
+.input-offer2:checked ~ .offers-label-wrapper label[for="offer2"],
+.input-offer3:checked ~ .offers-label-wrapper label[for="offer3"] {
+  background-color: $bg-color;
+  border: 3px solid $dark-color;
+}
+//table transitions
+.input-offer1:checked ~ .offers-table {
+  transform: translateX(-135px);
+  transition: 0.9s;
+}
+
+.input-offer2:checked ~ .offers-table {
+  transform: translateX(-415px);
+  transition: 0.9s;
+}
+
+.input-offer3:checked ~ .offers-table {
+  transform: translateX(-695px);
+  transition: 0.9s;
+}
+
+@media (min-width: $tablet-width) {
+  .offers-label-wrapper {
+    display: none;
+  }
+  .offers-table__item-mobile {
+    font-size: 0;
+  }
+  .offers-table__item-ok,
+  .offers-table__item-no {
+    background-position-x: center;
+  }
+}
+@media (min-width: $desktop-width) {
+  .offers-table__header-cell,
+  .offers-table__data-cell {
+    width: 234px;
+  }
 }
