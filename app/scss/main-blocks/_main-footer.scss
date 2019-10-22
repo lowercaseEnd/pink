@@ -25,3 +25,24 @@
 .contact-list__address-info {
   color: $pink-color;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-wrapper {
+    width: 100%;
+  }
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
+  }
+  .contact-list__item {
+    flex-grow: 1;
+    width: 260px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .contact-list {
+    width: 940px;
+  }
+}

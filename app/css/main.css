@@ -675,14 +675,14 @@ img {
   color: #ffffff;
 }
 
-.offers-table__tarrif-name {
+.offers-table__tariff-name {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
 }
 
-.offers-table__tarrif-cost {
-  font-weight: initial;
+.offers-table__tariff-cost {
+  font-weight: lighter;
   line-height: 1.6;
 }
 
@@ -877,6 +877,28 @@ img {
   color: #d22856;
 }
 
+@media (min-width: 660px) {
+  .contacts-wrapper {
+    width: 100%;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .contact-list__item {
+    flex-grow: 1;
+    width: 260px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-list {
+    width: 940px;
+  }
+}
 .header-wrapper-logo {
   display: flex;
   justify-content: space-between;
