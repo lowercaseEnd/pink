@@ -25,6 +25,8 @@
 }
 .label-wrapper {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   top: 100%;
   left: 46%;
 }

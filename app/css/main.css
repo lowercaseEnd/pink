@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   padding: 0;
   margin: 0;
@@ -523,6 +524,8 @@ img {
 
 .label-wrapper {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   top: 100%;
   left: 46%;
 }
@@ -663,9 +666,8 @@ img {
 
 .offers-table {
   text-align: center;
-  margin: 0 auto;
-  width: 320px;
-  overflow: hidden;
+  width: 995px;
+  height: 280px;
 }
 
 .offers-table__head {
@@ -695,6 +697,74 @@ img {
 
 .offers-label-wrapper {
   margin: 0 auto;
+}
+
+.offers-table__data-cell {
+  height: 56px;
+  width: 276px;
+}
+
+.offers-table__header-cell:nth-child(3) {
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.offers-table__header-cell:nth-child(3)::before {
+  content: "хит";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: 0;
+  font-size: 14px;
+  line-height: 2.1;
+  font-weight: lighter;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+}
+
+.offers-table__item-ok {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 210px center;
+  background-size: contain;
+}
+
+.offers-table__item-no {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 210px center;
+  background-size: contain;
+}
+
+.offers-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.offers-label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  height: 30px;
+  margin: 0 auto;
+  position: absolute;
+  top: 94%;
+  left: 40%;
+}
+
+[class*=input-offer] {
+  display: none;
+}
+
+.offer__check {
+  display: block;
+  width: 3px;
+  height: 3px;
+  padding: 3px;
+  background-color: #283645;
 }
 
 .contacts-wrapper {
