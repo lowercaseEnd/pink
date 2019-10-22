@@ -129,6 +129,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .offers-table {
+    width: 620px;
+  }
   .offers-label-wrapper {
     display: none;
   }
@@ -139,10 +142,38 @@
   .offers-table__item-no {
     background-position-x: center;
   }
+  .offers-table__header-cell,
+  .offers-table__data-cell {
+    width: 154px;
+    height: 75px;
+  }
+  .input-offer1:checked ~ .offers-table,
+  .input-offer2:checked ~ .offers-table,
+  .input-offer3:checked ~ .offers-table {
+    transform: none;
+  }
+  .offers-table__header-cell:nth-child(3) {
+    background-position-y: -10px;
+  }
+  .offers-table__header-cell:nth-child(3)::before {
+    top: 20px;
+  }
+  .offers-table__header-cell {
+    text-transform: uppercase;
+  }
+  .offers-table__data-cell {
+    
+    text-transform: initial;
+  }
 }
 @media (min-width: $desktop-width) {
   .offers-table__header-cell,
   .offers-table__data-cell {
     width: 234px;
+    height: 94px;
+  }
+ 
+  .offers-table {
+    width: 940px;
   }
 }
