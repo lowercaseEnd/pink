@@ -78,7 +78,7 @@ img {
   color: rgba(210, 40, 86, 0.3);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .main-nav {
     width: 700px;
     justify-content: space-between;
@@ -208,7 +208,7 @@ img {
     width: 250px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .download-links__intro-banner {
     width: 300px;
     font-size: 50px;
@@ -260,7 +260,7 @@ img {
     margin: 0 auto;
   }
 }
-@media (min-width: 660px) and (max-width: 1200px) {
+@media (min-width: 660px) and (max-width: 960px) {
   .download-links {
     padding-top: 120px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet.jpg") no-repeat center #283645;
@@ -273,7 +273,7 @@ img {
     padding-bottom: 80px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .download-links {
     margin-top: -110px;
     padding-top: 170px;
@@ -345,7 +345,7 @@ img {
     color: #d22856;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .info-container {
     min-height: 350px;
   }
@@ -442,7 +442,7 @@ img {
     padding-bottom: 450px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .features-list {
     flex-direction: row;
     width: 940px;
@@ -597,7 +597,7 @@ img {
     left: 48%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .label-wrapper {
     display: none;
     top: -120%;
@@ -837,7 +837,7 @@ img {
     text-transform: initial;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .offers-table__header-cell,
 .offers-table__data-cell {
     width: 234px;
@@ -894,7 +894,7 @@ img {
     width: 260px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .contact-list {
     width: 940px;
   }
@@ -906,7 +906,23 @@ img {
   margin-bottom: 1px;
 }
 
-@media (min-width: 1200px) {
+.main-header__link {
+  color: #ffffff;
+}
+
+.main-header__link {
+  text-decoration: none;
+}
+
+.main-header__link:hover {
+  color: #d22856;
+}
+
+.main-header__link:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
+@media (min-width: 960px) {
   .header__toggle {
     display: none;
   }

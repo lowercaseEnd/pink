@@ -7,6 +7,21 @@
   width: 100%;
   margin-bottom: 1px;
 }
+
+//links
+.main-header__link {
+  color: $white-color;
+}
+//links states
+.main-header__link {
+  text-decoration: none;
+}
+.main-header__link:hover {
+  color: $pink-color;
+}
+.main-header__link:active {
+  color: $pink-color-rgba;
+}
 @media (min-width: $desktop-width) {
   .header__toggle {
     display: none;
