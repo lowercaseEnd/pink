@@ -81,6 +81,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
+  overflow: hidden;
 }
 .offers-label-wrapper {
   display: flex;
@@ -157,6 +158,7 @@
   }
   .offers-table__header-cell:nth-child(3)::before {
     top: 20px;
+    left: -5px;
   }
   .offers-table__header-cell {
     text-transform: uppercase;
@@ -164,6 +166,12 @@
   .offers-table__data-cell {
     
     text-transform: initial;
+  }
+  .offers-table__header-cell:nth-child(3) {
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+  
+    position: relative;
   }
 }
 @media (min-width: $desktop-width) {
