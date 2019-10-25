@@ -1,0 +1,45 @@
+@import "../variables";
+
+//bg image
+.award {
+  background-color: $dark-color;
+  background-image: url("../img/bg-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+//text under nav
+.award__title {
+  font-size: 24px;
+  width: $mobile-block;
+  color: $white-color;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+@media (min-width: $tablet-width) {
+  .award {
+    background-image: url("../img/bg-back-tablet.jpg");
+    background-position-y: -61px;
+  }
+  .award__title {
+    width: 620px;
+    font-size: 50px;
+    padding: 86px 30px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .award {
+    background-image: url("../img/bg-back-desktop.jpg");
+    background-size: auto;
+    background-position: top;
+    padding-top: 120px;
+    margin-top: -110px;
+  }
+  .award__title {
+    width: 780px;
+  }
+}

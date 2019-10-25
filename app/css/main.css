@@ -982,6 +982,10 @@ img {
     background-color: rgba(27, 36, 47, 0.3);
   }
 }
+.links-forms {
+  display: block;
+}
+
 @media (min-width: 660px) {
   .social-links__logo-footer {
     width: 147px;
@@ -1035,6 +1039,70 @@ img {
   .social-links__trademark {
     font-size: 18px;
     line-height: 1;
+  }
+}
+.forms__name {
+  text-align: left;
+}
+
+.forms-section__invitation {
+  width: 280px;
+  font-size: 14px;
+  color: #283645;
+  line-height: 2.1;
+  margin: 0 auto;
+}
+
+.forms-section__invitation--tablet {
+  display: none;
+}
+
+.forms__name-label {
+  color: #d22856;
+}
+
+.award {
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.award__title {
+  font-size: 24px;
+  width: 280px;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+@media (min-width: 660px) {
+  .award {
+    background-image: url("../img/bg-back-tablet.jpg");
+    background-position-y: -61px;
+  }
+
+  .award__title {
+    width: 620px;
+    font-size: 50px;
+    padding: 86px 30px;
+  }
+}
+@media (min-width: 960px) {
+  .award {
+    background-image: url("../img/bg-back-desktop.jpg");
+    background-size: auto;
+    background-position: top;
+    padding-top: 120px;
+    margin-top: -110px;
+  }
+
+  .award__title {
+    width: 780px;
   }
 }
 

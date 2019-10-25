@@ -13,7 +13,7 @@
   <header class="main-header">
     <div class="header-wrapper-menu">
       <div class="header-wrapper-logo">
-        <a class="main-header__link main-header__link-active">
+        <a class="main-header__link" href="index.html">
           <picture class="main-header__logo">
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x">
@@ -25,14 +25,14 @@
       </div>
       <nav class="main-header__nav nav">
         <ul class="main-nav">
-          <li class="main-nav__item main-nav__active">
-            <a class="main-nav__link main-nav__link-active">главная</a>
-          </li>
           <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">главная</a>
+          </li>
+          <li class="main-nav__item main-nav__active">
             <a class="main-nav__link" href="#">фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">конкурс</a>
+            <a class="main-nav__link main-nav__link-active" href="#">конкурс</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">html Academy</a>
@@ -49,9 +49,9 @@
     <section class="forms-section">
       <p class="forms-section__invitation">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
         вашу
-        бонусную карту! <span class="forms-section__invitaion--tablet">Пожалуйста, заполните форму ниже:</span></p>
+        бонусную карту! <span class="forms-section__invitation--tablet">Пожалуйста, заполните форму ниже:</span></p>
       <form class="forms-section__fields forms" action="/echo" method="post">
-        <fieldset class="forms__container">
+        <fieldset class="forms__container forms__name">
           <legend class="visually-hidden">Имя</legend>
           <label class="forms__name-label" for="surname">Фамилия:</label>
           <input type="text" class="forms__input-name" id="surname" placeholder="Укажите фамилию *">
@@ -60,7 +60,7 @@
           <label class="forms__name-label" for="fathers-name">Отчество:</label>
           <input type="text" class="forms__input-name" id="fathers-name" placeholder="Ну и отчество тоже">
         </fieldset>
-        <fieldset class="forms__container">
+        <fieldset class="forms__container forms__radio">
           <legend class="forms__title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="forms__list list-checkbox">
             <li class="list-checkbox__item">
@@ -89,7 +89,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="forms__container">
+        <fieldset class="forms__container forms__contacts">
           <legend class="forms__title">Контактная информация</legend>
           <label class="forms__name-label" for="phone">Имя:</label>
           <input type="number" class="forms__input-name" id="phone" placeholder="Номер, пожалуйста">
@@ -113,11 +113,11 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="forms__container">
+        <fieldset class="forms__container forms__emotions">
           <legend class="forms__title">Опишите свои эмоции</legend>
           <textarea class="forms__text"  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <fieldset class="forms__container">
+        <fieldset class="forms__container forms__send">
           <legend class="visually-hidden">Отправить</legend>
           <button class="forms__submit-button" type="submit"></button>
           <p class="forms__important-fields">— обязательные <span class="forms__important-fields--desktop">для заполнения</span> поля</p>

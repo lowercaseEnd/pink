@@ -1,0 +1,20 @@
+@import '../variables';
+
+.forms__name {
+  text-align: left;
+}
+.forms-section__invitation {
+  width: $mobile-block;
+  font-size: 14px;
+  color: $dark-color;
+  line-height: 2.1;
+  margin: 0 auto;
+}
+.forms-section__invitation--tablet {
+  display: none;  
+}
+
+//labels above input info
+.forms__name-label {
+  color: $pink-color;
+}
