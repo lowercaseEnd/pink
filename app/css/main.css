@@ -1059,6 +1059,37 @@ img {
 
 .forms__name-label {
   color: #d22856;
+  text-transform: uppercase;
+}
+
+.forms__container {
+  border: none;
+}
+
+.forms__name {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.forms__input-name {
+  margin-top: 16px;
+  margin-bottom: 33px;
+  padding-left: 20px;
+  width: 276px;
+  height: 59px;
+}
+
+.forms__input-name {
+  border: 2px solid #e5e5e5;
+}
+
+.forms__input-name:hover {
+  border-color: #283645;
+}
+
+.forms__input-name:active {
+  border-color: #d22856;
 }
 
 .award {
