@@ -1041,6 +1041,13 @@ img {
     line-height: 1;
   }
 }
+.forms {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .forms__name {
   text-align: left;
 }
@@ -1057,6 +1064,11 @@ img {
   display: none;
 }
 
+@media (min-width: 660px) {
+  .forms-section__invitation--tablet {
+    display: inline-block;
+  }
+}
 .forms__name-label {
   color: #d22856;
   text-transform: uppercase;
@@ -1066,8 +1078,9 @@ img {
   border: none;
 }
 
-.forms__name {
+.forms__name-wrapper {
   display: flex;
+  flex-direction: column;
   width: 280px;
   margin: 0 auto;
 }
@@ -1092,6 +1105,27 @@ img {
   border-color: #d22856;
 }
 
+@media (min-width: 660px) {
+  .forms {
+    width: 620px;
+  }
+
+  .forms__name-wrapper {
+    width: 620px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .forms__input-name {
+    flex-grow: 1;
+    min-width: 477px;
+  }
+
+  .forms__name-label {
+    padding: 0;
+    margin: 40px 20px 0 0;
+  }
+}
 .award {
   background-color: #283645;
   background-image: url("../img/bg-back-mobile.jpg");

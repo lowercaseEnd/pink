@@ -1,5 +1,12 @@
 @import '../variables';
 
+.forms {
+  display: flex;
+  flex-direction: column;
+  width: $mobile-block;
+  margin: 0 auto;
+}
+
 .forms__name {
   text-align: left;
 }
@@ -10,9 +17,14 @@
   line-height: 2.1;
   margin: 0 auto;
 }
-
+//text that doesn't appear on mobile
 .forms-section__invitation--tablet {
   display: none;  
+}
+@media (min-width: $tablet-width) {
+  .forms-section__invitation--tablet {
+    display: inline-block;
+  }
 }
 
 //labels above input info
@@ -26,8 +38,9 @@
   border: none;
 }
 
-.forms__name {
+.forms__name-wrapper {
   display: flex;
+  flex-direction: column;
   width: $mobile-block;
   margin: 0 auto;
 }
@@ -47,4 +60,23 @@
 }
 .forms__input-name:active {
   border-color: $pink-color;
+}
+
+@media (min-width: $tablet-width) {
+  .forms {
+    width: 620px;
+  }
+  .forms__name-wrapper {
+    width: 620px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .forms__input-name {
+    flex-grow: 1;
+    min-width: 477px;
+  }
+  .forms__name-label {
+    padding: 0;
+    margin: 40px 20px 0 0;
+  }
 }
