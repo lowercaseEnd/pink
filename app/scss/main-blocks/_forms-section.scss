@@ -53,7 +53,7 @@
 }
 //borders around input info
 .forms__input-name {
-  border: 2px solid #e5e5e5;
+  border: 2px solid $border-color;
 }
 .forms__input-name:hover {
   border-color: $dark-color;
@@ -78,5 +78,29 @@
   .forms__name-label {
     padding: 0;
     margin: 40px 20px 0 0;
+  }
+}
+@media (min-width: $desktop-width) {
+  .forms {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 940px;
+  }
+  .forms__name-wrapper {
+    width: 470px;
+    margin: 0;
+  }
+  .forms__name {
+    order: -2;
+  }
+  .forms__input-name {
+    min-width: 337px;
+  }
+  //radios for app
+  .forms__app {
+    width: 400px;
+    height: 300px;
+    order: -1;
+    border: 2px solid $border-color;
   }
 }

@@ -1126,6 +1126,33 @@ img {
     margin: 40px 20px 0 0;
   }
 }
+@media (min-width: 960px) {
+  .forms {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 940px;
+  }
+
+  .forms__name-wrapper {
+    width: 470px;
+    margin: 0;
+  }
+
+  .forms__name {
+    order: -2;
+  }
+
+  .forms__input-name {
+    min-width: 337px;
+  }
+
+  .forms__app {
+    width: 400px;
+    height: 300px;
+    order: -1;
+    border: 2px solid #e5e5e5;
+  }
+}
 .award {
   background-color: #283645;
   background-image: url("../img/bg-back-mobile.jpg");
