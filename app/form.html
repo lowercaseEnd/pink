@@ -63,7 +63,7 @@
           </div>
         </fieldset>
         <fieldset class="forms__container forms__radio">
-          <legend class="forms__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="forms__title--checkbox">Ваши безбашенные достижения в путешествии</legend>
           <ul class="forms__list list-checkbox">
             <li class="list-checkbox__item">
               <label class="list-checkbox__label" for="shark">Сделал селфи с акулой</label>
@@ -92,31 +92,33 @@
           </ul>
         </fieldset>
         <fieldset class="forms__container forms__contacts">
-          <legend class="forms__title">Контактная информация</legend>
+          <legend class="forms__title--contact">Контактная информация</legend>
           <label class="forms__contacts-label" for="phone">Имя:</label>
           <input type="number" class="forms__input-contact" id="phone" placeholder="Номер, пожалуйста">
           <label class="forms__contacts-label" for="mail">Фамилия:</label>
           <input type="email" class="forms__input-contact" id="mail" placeholder="Введите почту *">
         </fieldset>
-        <fieldset class="forms__container forms__app">
-          <legend class="forms__title">С каким приложением путешествовали?</legend>
-          <ul class="forms__apps-list apps-list">
-            <li class="apps-list">
-              <label for="pink-ios">Pink для iOS</label>
-              <input type="radio" name="" id="pink-ios">
-            </li>
-            <li class="apps-list">
-              <label for="pink-android">Pink на Android</label>
-              <input type="radio" name="" id="pink-android">
-            </li>
-            <li class="apps-list">
-              <label for="pink-wphone">Windows Phone</label>
-              <input type="radio" name="" id="pink-wphone">
-            </li>
-          </ul>
-        </fieldset>
+        <div class="forms__app-wrapper">
+          <fieldset class="forms__container forms__app">
+            <legend class="forms__title--app">С каким приложением путешествовали?</legend>
+            <ul class="forms__apps-list apps-list">
+              <li class="apps-list__item">
+                <input type="radio" name="apps" id="pink-ios" class="apps-list__radio" checked>
+                <label for="pink-ios" class="apps-list__label">Pink для iOS</label>
+              </li>
+              <li class="apps-list__item">
+                <input type="radio" name="apps" id="pink-android" class="apps-list__radio">
+                <label for="pink-android" class="apps-list__label">Pink на Android</label>
+              </li>
+              <li class="apps-list__item">
+                <input type="radio" name="apps" id="pink-wphone" class="apps-list__radio">
+                <label for="pink-wphone" class="apps-list__label">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="forms__container forms__emotions">
-          <legend class="forms__title">Опишите свои эмоции</legend>
+          <legend class="forms__title--emotions">Опишите свои эмоции</legend>
           <textarea class="forms__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <fieldset class="forms__container forms__send">

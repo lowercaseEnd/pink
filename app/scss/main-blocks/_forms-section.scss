@@ -1,9 +1,8 @@
-@import '../variables';
+@import "../variables";
 
 .forms {
   display: flex;
   flex-direction: column;
-  width: $mobile-block;
   margin: 0 auto;
 }
 
@@ -19,7 +18,7 @@
 }
 //text that doesn't appear on mobile
 .forms-section__invitation--tablet {
-  display: none;  
+  display: none;
 }
 @media (min-width: $tablet-width) {
   .forms-section__invitation--tablet {
@@ -30,7 +29,7 @@
 //labels above input info
 .forms__name-label {
   color: $pink-color;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 //hide border around fields
@@ -64,7 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .forms {
-    width: 620px;
+    // width: 620px;
   }
   .forms__name-wrapper {
     width: 620px;
@@ -79,6 +78,9 @@
     padding: 0;
     margin: 40px 20px 0 0;
   }
+  .forms__name {
+    order: -2;
+  }
 }
 @media (min-width: $desktop-width) {
   .forms {
@@ -90,17 +92,118 @@
     width: 470px;
     margin: 0;
   }
-  .forms__name {
-    order: -2;
-  }
+  
   .forms__input-name {
     min-width: 337px;
   }
-  //radios for app
-  .forms__app {
-    width: 400px;
-    height: 300px;
+}
+
+//radio buttons for app
+.apps-list__radio,
+.list-checkbox__checkbox {
+  display: none;
+}
+.apps-list__item-wrapper {
+  // position: absolute;
+}
+//bg color on mobile
+.forms__app-wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.apps-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 30%;
+}
+//text above buttons
+.forms__title--app {
+  // padding-top: 30px;
+  text-align: center;
+  width: 190px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  color: $pink-color;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  //for firefox
+  margin-left: auto;
+  margin-right: auto;
+}
+.apps-list__item {
+  margin-bottom: 60px;
+}
+.apps-list__label {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: $dark-color;
+}
+//change check buttons
+.apps-list__label::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1px;
+  left: -38px;
+  border: 2px solid $border-color;
+  border-radius: 50%;
+  background-color: $white-color;
+  padding: 0;
+  margin: 0;
+}
+.apps-list__radio:checked ~ .apps-list__label::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  display: block;
+  top: 8px;
+  left: -31px;
+  background-color: $pink-color;
+  border-radius: 50%;
+}
+@media (min-width: $tablet-width) {
+  .forms__app-wrapper {
+    background-color: $white-color;
     order: -1;
+  }
+  .apps-list {
+    padding-left: 16%;
+  }
+  .forms__title--app {
+    padding-top: 0;
+    line-height: 2.1;
+    width: 330px;
+    margin-bottom: 15px;
+  }
+  .forms__app {
+    margin: 0 auto;
+    width: 616px;
+    height: 315px;
     border: 2px solid $border-color;
+  }
+}
+@media (min-width: $desktop-width) {
+  .forms__title--app {
+    padding-top: 0;
+  }
+  .forms__app {
+    width: 414px;
+    height: 297px;
+  }
+  .forms__app-wrapper {
+    background-color: $white-color;
+    width: 400px; //radios for app
+    height: 300px;
+    // order: -1;
+  }
+  .apps-list {
+    padding-left: 26%;
   }
 }
