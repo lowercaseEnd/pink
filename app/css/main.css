@@ -1059,6 +1059,20 @@ img {
   margin: 0 auto;
 }
 
+.forms__title--app,
+.forms__title--checkbox {
+  text-align: center;
+  width: 190px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  color: #d22856;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .forms-section__invitation--tablet {
   display: none;
 }
@@ -1157,19 +1171,6 @@ img {
   padding-left: 30%;
 }
 
-.forms__title--app {
-  text-align: center;
-  width: 190px;
-  padding-top: 30px;
-  margin-bottom: 30px;
-  color: #d22856;
-  font-size: 14px;
-  line-height: 1.28;
-  text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .apps-list__item {
   margin-bottom: 60px;
 }
@@ -1252,6 +1253,43 @@ img {
 
   .apps-list {
     padding-left: 26%;
+  }
+}
+.list-checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.forms__title--checkbox {
+  margin-bottom: 55px;
+  margin-top: 50px;
+}
+
+.list-checkbox__item {
+  margin-bottom: 60px;
+}
+
+.forms__adventures-wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 660px) {
+  .forms__adventures-wrapper {
+    background-color: #ffffff;
+  }
+}
+@media (min-width: 960px) {
+  .list-checkbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 820px;
+  }
+
+  .list-checkbox__item {
+    width: 260px;
   }
 }
 .award {

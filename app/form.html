@@ -62,35 +62,37 @@
             <input type="text" class="forms__input-name" id="fathers-name" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
-        <fieldset class="forms__container forms__radio">
-          <legend class="forms__title--checkbox">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="forms__list list-checkbox">
-            <li class="list-checkbox__item">
-              <label class="list-checkbox__label" for="shark">Сделал селфи с акулой</label>
-              <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="shark" checked>
-            </li>
-            <li class="list-checkbox__item">
-              <label class="list-checkbox__label" for="tan">Обгорел на пляже</label>
-              <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="tan" checked>
-            </li>
-            <li class="list-checkbox__item">
-              <label class="list-checkbox__label" for="chuck">Видел Чака Норриса</label>
-              <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="chuck">
-            </li>
-            <li class="list-checkbox__item">
-              <label class="list-checkbox__label" for="souvenir">Накупил сувениров</label>
-              <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="souvenir">
-            </li>
-            <li class="list-checkbox__item">
-              <label class="list-checkbox__label" for="tower">Удержал башню</label>
-              <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="tower" checked>
-            </li>
-            <li class="list-checkbox__item">
-              <label class="list-checkbox__label" for="hotel">Разгромил отель</label>
-              <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="hotel">
-            </li>
-          </ul>
-        </fieldset>
+        <div class="forms__adventures-wrapper">
+          <fieldset class="forms__container forms__adventures">
+            <legend class="forms__title--checkbox">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="forms__list list-checkbox">
+              <li class="list-checkbox__item">
+                <label class="list-checkbox__label" for="shark">Сделал селфи с акулой</label>
+                <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="shark" checked>
+              </li>
+              <li class="list-checkbox__item">
+                <label class="list-checkbox__label" for="tan">Обгорел на пляже</label>
+                <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="tan" checked>
+              </li>
+              <li class="list-checkbox__item">
+                <label class="list-checkbox__label" for="chuck">Видел Чака Норриса</label>
+                <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="chuck">
+              </li>
+              <li class="list-checkbox__item">
+                <label class="list-checkbox__label" for="souvenir">Накупил сувениров</label>
+                <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="souvenir">
+              </li>
+              <li class="list-checkbox__item">
+                <label class="list-checkbox__label" for="tower">Удержал башню</label>
+                <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="tower" checked>
+              </li>
+              <li class="list-checkbox__item">
+                <label class="list-checkbox__label" for="hotel">Разгромил отель</label>
+                <input class="list-checkbox__checkbox" type="checkbox" name="adventures" id="hotel">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="forms__container forms__contacts">
           <legend class="forms__title--contact">Контактная информация</legend>
           <label class="forms__contacts-label" for="phone">Имя:</label>
