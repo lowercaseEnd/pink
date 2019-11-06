@@ -1059,8 +1059,7 @@ img {
   margin: 0 auto;
 }
 
-.forms__title--app,
-.forms__title--checkbox {
+.forms__title {
   text-align: center;
   width: 190px;
   padding-top: 30px;
@@ -1073,6 +1072,23 @@ img {
   margin-right: auto;
 }
 
+.forms__title--checkbox {
+  margin-bottom: 55px;
+  margin-top: 50px;
+}
+
+@media (min-width: 660px) {
+  .forms__title {
+    padding-top: 0;
+    line-height: 2.1;
+    width: 330px;
+    margin-bottom: 15px;
+  }
+
+  .forms__title--checkbox {
+    width: 390px;
+  }
+}
 .forms-section__invitation--tablet {
   display: none;
 }
@@ -1221,13 +1237,6 @@ img {
     padding-left: 16%;
   }
 
-  .forms__title--app {
-    padding-top: 0;
-    line-height: 2.1;
-    width: 330px;
-    margin-bottom: 15px;
-  }
-
   .forms__app {
     margin: 0 auto;
     width: 616px;
@@ -1236,10 +1245,6 @@ img {
   }
 }
 @media (min-width: 960px) {
-  .forms__title--app {
-    padding-top: 0;
-  }
-
   .forms__app {
     width: 414px;
     height: 297px;
@@ -1262,11 +1267,6 @@ img {
   margin: 0 auto;
 }
 
-.forms__title--checkbox {
-  margin-bottom: 55px;
-  margin-top: 50px;
-}
-
 .list-checkbox__item {
   margin-bottom: 60px;
 }
@@ -1276,9 +1276,43 @@ img {
   background-color: #f2f2f2;
 }
 
+.list-checkbox__label {
+  position: relative;
+}
+
+.list-checkbox__label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.list-checkbox__checkbox:checked ~ .list-checkbox__label::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: 5px 7px;
+}
+
 @media (min-width: 660px) {
+  .list-checkbox {
+    padding-top: 30px;
+  }
+
   .forms__adventures-wrapper {
     background-color: #ffffff;
+  }
+
+  .forms__adventures {
+    border: 2px solid #e5e5e5;
+    width: 616px;
+    height: 549px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 960px) {
@@ -1290,6 +1324,11 @@ img {
 
   .list-checkbox__item {
     width: 260px;
+  }
+
+  .forms__adventures {
+    width: 936px;
+    height: 260px;
   }
 }
 .award {
