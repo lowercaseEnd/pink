@@ -1059,6 +1059,12 @@ img {
   margin: 0 auto;
 }
 
+.forms__label {
+  font-size: 14px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
 .forms__title {
   text-align: center;
   width: 190px;
@@ -1098,11 +1104,6 @@ img {
     display: inline-block;
   }
 }
-.forms__name-label {
-  color: #d22856;
-  text-transform: uppercase;
-}
-
 .forms__container {
   border: none;
 }
@@ -1114,7 +1115,7 @@ img {
   margin: 0 auto;
 }
 
-.forms__input-name {
+.forms__input {
   margin-top: 16px;
   margin-bottom: 33px;
   padding-left: 20px;
@@ -1122,15 +1123,15 @@ img {
   height: 59px;
 }
 
-.forms__input-name {
+.forms__input {
   border: 2px solid #e5e5e5;
 }
 
-.forms__input-name:hover {
+.forms__input:hover {
   border-color: #283645;
 }
 
-.forms__input-name:active {
+.forms__input:active {
   border-color: #d22856;
 }
 
@@ -1141,12 +1142,12 @@ img {
     flex-wrap: wrap;
   }
 
-  .forms__input-name {
+  .forms__input--name {
     flex-grow: 1;
     min-width: 477px;
   }
 
-  .forms__name-label {
+  .forms__name--label {
     padding: 0;
     margin: 40px 20px 0 0;
   }
@@ -1167,7 +1168,7 @@ img {
     margin: 0;
   }
 
-  .forms__input-name {
+  .forms__input--name {
     min-width: 337px;
   }
 }
@@ -1225,6 +1226,10 @@ img {
   left: -31px;
   background-color: #d22856;
   border-radius: 50%;
+}
+
+.apps-list__radio:hover {
+  border-color: #283645;
 }
 
 @media (min-width: 660px) {
@@ -1329,6 +1334,49 @@ img {
   .forms__adventures {
     width: 936px;
     height: 260px;
+  }
+}
+.forms__title--contact {
+  display: none;
+}
+
+.forms__contacts--wrapper {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .forms__title--contact {
+    display: block;
+  }
+
+  .forms__contacts {
+    padding-top: 30px;
+    border: 2px solid #e5e5e5;
+    width: 616px;
+    height: 336px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .forms__contacts--wrapper {
+    width: 500px;
+    padding-top: 0;
+  }
+
+  .forms__input--contact {
+    width: 500px;
+  }
+
+  .forms__contacts--label:nth-child(1) {
+    order: 2;
+  }
+
+  .forms__contacts--label:nth-child(2) {
+    order: 1;
   }
 }
 .award {

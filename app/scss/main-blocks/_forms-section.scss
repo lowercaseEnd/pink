@@ -16,6 +16,14 @@
   line-height: 2.1;
   margin: 0 auto;
 }
+
+//labels above input
+.forms__label {
+  font-size: 14px;
+  color: $pink-color;
+  text-transform: uppercase;
+}
+
 //text above buttons
 // .forms__title--app,
 // .forms__title--checkbox {
@@ -62,11 +70,7 @@
   }
 }
 
-//labels above input info
-.forms__name-label {
-  color: $pink-color;
-  text-transform: uppercase;
-}
+
 
 //hide border around fields
 .forms__container {
@@ -79,7 +83,7 @@
   width: $mobile-block;
   margin: 0 auto;
 }
-.forms__input-name {
+.forms__input {
   margin-top: 16px;
   margin-bottom: 33px;
   padding-left: 20px;
@@ -87,13 +91,13 @@
   height: 59px;
 }
 //borders around input info
-.forms__input-name {
+.forms__input {
   border: 2px solid $border-color;
 }
-.forms__input-name:hover {
+.forms__input:hover {
   border-color: $dark-color;
 }
-.forms__input-name:active {
+.forms__input:active {
   border-color: $pink-color;
 }
 
@@ -103,11 +107,11 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .forms__input-name {
+  .forms__input--name {
     flex-grow: 1;
     min-width: 477px;
   }
-  .forms__name-label {
+  .forms__name--label {
     padding: 0;
     margin: 40px 20px 0 0;
   }
@@ -126,7 +130,7 @@
     margin: 0;
   }
   
-  .forms__input-name {
+  .forms__input--name {
     min-width: 337px;
   }
 }
@@ -183,6 +187,9 @@
   left: -31px;
   background-color: $pink-color;
   border-radius: 50%;
+}
+.apps-list__radio:hover {
+  border-color: $dark-color;
 }
 @media (min-width: $tablet-width) {
   .forms__app-wrapper {
@@ -278,5 +285,44 @@
   .forms__adventures {
     width: 936px;
     height: 260px;
+  }
+}
+
+//contact info
+.forms__title--contact {
+  display: none;
+}
+.forms__contacts--wrapper {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: $mobile-block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .forms__title--contact {
+    display: block;
+  }
+  .forms__contacts {
+    padding-top: 30px;
+    border: 2px solid $border-color;
+    width: 616px;
+    height: 336px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .forms__contacts--wrapper {
+    width: 500px;
+    padding-top: 0;
+  }
+  .forms__input--contact {
+    width: 500px;
+  }
+  .forms__contacts--label:nth-child(1) {
+    order: 2;
+  }
+  .forms__contacts--label:nth-child(2) {
+    order: 1;
   }
 }
