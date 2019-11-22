@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Pink photo page</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-wrapper-menu">
+      <div class="header-wrapper-logo">
+        <a class="main-header__link main-header__link-active">
+          <picture class="main-header__logo">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения" width="75" height="22">
+          </picture>
+
+        </a>
+        <button class="header__toggle" type="button" title="Кнопка меню"></button>
+      </div>
+      <nav class="main-header__nav nav">
+        <ul class="main-nav">
+          <li class="main-nav__item main-nav__active">
+            <a class="main-nav__link main-nav__link-active">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <h1 class="visually-hidden">Фотографии наших пользователей</h1>
+    <section class="page-title">
+      <h2 class="page-titel__text">Фотографии пользователей</h2>
+    </section>
+    <section class="photo-section">
+      <p class="photo-list__text">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+      <ul class="photo-list">
+        <li class="photo-list__item">
+          <div class="jump-wrapper">
+            <picture class="photo-list__jump">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+              <img class="main-photo" src="img/panorama-mobile@1x.jpg" alt="фото панорама">
+            </picture>
+            <p class="photo-list__jump--by"><span class="photo-name">Анна</span> <span class="photo-time">(5 минут
+                назад)</span></p>
+            <p class="photo-list__jump--comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите
+              прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-list__jump--likes">нравится: 215</p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="moon-wrapper">
+            <picture class="photo-list__moon">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img src="img/photo-car-mobile@1x.jpg" alt="фото панорама">
+            </picture>
+            <p class="photo-list__moon--by">Левон<span class="photo-name"></span> <span class="photo-time">(5 часов
+                назад)</span></p>
+            <p class="photo-list__moon--comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photo-list__moon--likes">НРАВИТСЯ: 356</p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="neighbours-wrapper">
+            <picture class="photo-list__moon">
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="фото панорама">
+            </picture>
+            <p class="photo-list__neighbours--by"><span class="photo-name">Антон</span> <span class="photo-time">(12
+                часов назад)</span></p>
+            <p class="photo-list__neighbours--comment">Соседи будут рады!</p>
+            <p class="photo-list__neighbours--likes">НРАВИТСЯ: 666</p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="sky-wrapper">
+            <picture class="photo-list__sky">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img src="img/photo-window-mobile@1x.jpg" alt="фото панорама">
+            </picture>
+            <p class="photo-list__sky--by">Борис<span class="photo-name">(20 часов назад)</span> <span
+                class="photo-time"></span></p>
+            <p class="photo-list__sky--comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo-list__sky--likes">НРАВИТСЯ: 215</p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="kuban-wrapper">
+            <picture class="photo-list__kuban">
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="фото панорама">
+            </picture>
+            <p class="photo-list__kuban--by"><span class="photo-name">Сергей</span> <span class="photo-time">(25 часов
+                назад)</span></p>
+            <p class="photo-list__kuban--comment">Самая кубанская в мире!</p>
+            <p class="photo-list__kuban--likes">НРАВИТСЯ: 4</p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="snow-wrapper">
+            <picture class="photo-list__snow">
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="фото панорама">
+            </picture>
+            <p class="photo-list__snow--by"><span class="photo-name">Максим</span> <span class="photo-time">(40 часов
+                назад)</span></p>
+            <p class="photo-list__snow--comment">Где снег-то?</p>
+            <p class="photo-list__snow--likes">НРАВИТСЯ: 150</p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="like-wrapper">
+            <picture class="photo-list__like">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="фото панорама">
+            </picture>
+            <p class="photo-list__like--by"><span class="photo-name">Надежда</span> <span class="photo-time">(45 часов
+                назад)</span></p>
+            <p class="photo-list__like--comment">Всем GM и взаимные лайки!</p>
+            <p class="photo-list__like--likes">НРАВИТСЯ: 2560</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
