@@ -1368,15 +1368,62 @@ img {
   }
 
   .forms__input--contact {
-    width: 500px;
+    width: 440px;
+    margin-bottom: 20px;
   }
 
-  .forms__contacts--label:nth-child(1) {
+  .forms__contacts--label {
+    margin-left: 10px;
+  }
+
+  .forms__input--contact:nth-of-type(1) {
+    order: 0;
+  }
+
+  .forms__contacts--label:nth-of-type(1) {
+    order: 1;
+  }
+
+  .forms__input--contact:nth-of-type(2) {
     order: 2;
   }
 
-  .forms__contacts--label:nth-child(2) {
-    order: 1;
+  .forms__contacts--label:nth-of-type(2) {
+    order: 3;
+  }
+
+  .forms__contacts--wrapper {
+    position: relative;
+  }
+
+  .forms__contacts--wrapper::after {
+    content: "";
+    width: 60px;
+    height: 59px;
+    position: absolute;
+    top: 16px;
+    left: 440px;
+    display: block;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+  }
+
+  .forms__contacts--wrapper::before {
+    content: "";
+    width: 60px;
+    height: 59px;
+    position: absolute;
+    top: 125px;
+    left: 440px;
+    display: block;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
   }
 }
 .award {
