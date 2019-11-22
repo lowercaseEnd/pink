@@ -27,7 +27,7 @@
 //text above buttons
 // .forms__title--app,
 // .forms__title--checkbox {
-  .forms__title {
+.forms__title {
   // padding-top: 30px;
   text-align: center;
   width: 190px;
@@ -57,7 +57,6 @@
   }
 }
 @media (min-width: $desktop-width) {
-  
 }
 
 //text that doesn't appear on mobile
@@ -69,8 +68,6 @@
     display: inline-block;
   }
 }
-
-
 
 //hide border around fields
 .forms__container {
@@ -84,13 +81,16 @@
   margin: 0 auto;
 }
 .forms__input {
-  font-size: 18px;
-  color: $dark-color;
   margin-top: 16px;
   margin-bottom: 33px;
   padding-left: 20px;
   width: 276px;
   height: 59px;
+}
+.forms__text,
+.forms__input {
+  font-size: 18px;
+  color: $dark-color;
 }
 //borders around input info
 .forms__input {
@@ -131,7 +131,7 @@
     width: 470px;
     margin: 0;
   }
-  
+
   .forms__input--name {
     min-width: 337px;
   }
@@ -201,7 +201,7 @@
   .apps-list {
     padding-left: 16%;
   }
-  
+
   .forms__app {
     margin: 0 auto;
     width: 616px;
@@ -210,7 +210,6 @@
   }
 }
 @media (min-width: $desktop-width) {
-  
   .forms__app {
     width: 414px;
     height: 297px;
@@ -235,7 +234,7 @@
 }
 
 .list-checkbox__item {
-  margin-bottom: 60px
+  margin-bottom: 60px;
 }
 .forms__adventures--wrapper {
   width: 100%;
@@ -267,6 +266,7 @@
   }
   .forms__adventures--wrapper {
     background-color: $white-color;
+    order: 1;
   }
   .forms__adventures {
     border: 2px solid $border-color;
@@ -287,9 +287,6 @@
   .forms__adventures {
     width: 936px;
     height: 260px;
-  }
-  .forms__adventures--wrapper {
-    order: 1;
   }
 }
 
@@ -316,6 +313,7 @@
     height: 336px;
     margin: 0 auto;
     margin-top: 30px;
+    order: 0;
   }
   .forms__contacts--wrapper {
     width: 500px;
@@ -383,7 +381,6 @@
   .forms__contacts {
     width: 919px;
     height: 246px;
-    order: 0;
   }
   .forms__input--contact {
     width: 314px;
@@ -409,5 +406,43 @@
   .forms__contacts--wrapper::before {
     top: 16px;
     left: 758px;
+  }
+}
+
+//text field
+.forms__text {
+  width: 276px;
+  height: 197px;
+  resize: none;
+}
+.forms__emotions {
+  margin: 0 auto;
+}
+@media (min-width: $tablet-width) {
+  .forms__emotions {
+    order: 2;
+  }
+  .forms__text {
+    width: 496px;
+    height: 189px;
+    margin-left: 40px;
+  }
+  .forms__emotions {
+    padding-top: 30px;
+    border: 2px solid $border-color;
+    width: 616px;
+    height: 289px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .forms__text {
+    width: 816px;
+    height: 124px;
+  }
+  .forms__emotions {
+    padding-top: 15px;
+    width: 936px;
+    height: 213px;
   }
 }

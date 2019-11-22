@@ -1116,13 +1116,17 @@ img {
 }
 
 .forms__input {
-  font-size: 18px;
-  color: #283645;
   margin-top: 16px;
   margin-bottom: 33px;
   padding-left: 20px;
   width: 276px;
   height: 59px;
+}
+
+.forms__text,
+.forms__input {
+  font-size: 18px;
+  color: #283645;
 }
 
 .forms__input {
@@ -1313,6 +1317,7 @@ img {
 
   .forms__adventures--wrapper {
     background-color: #ffffff;
+    order: 1;
   }
 
   .forms__adventures {
@@ -1336,10 +1341,6 @@ img {
   .forms__adventures {
     width: 936px;
     height: 260px;
-  }
-
-  .forms__adventures--wrapper {
-    order: 1;
   }
 }
 .forms__title--contact {
@@ -1366,6 +1367,7 @@ img {
     height: 336px;
     margin: 0 auto;
     margin-top: 30px;
+    order: 0;
   }
 
   .forms__contacts--wrapper {
@@ -1442,7 +1444,6 @@ img {
   .forms__contacts {
     width: 919px;
     height: 246px;
-    order: 0;
   }
 
   .forms__input--contact {
@@ -1475,6 +1476,47 @@ img {
   .forms__contacts--wrapper::before {
     top: 16px;
     left: 758px;
+  }
+}
+.forms__text {
+  width: 276px;
+  height: 197px;
+  resize: none;
+}
+
+.forms__emotions {
+  margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .forms__emotions {
+    order: 2;
+  }
+
+  .forms__text {
+    width: 496px;
+    height: 189px;
+    margin-left: 40px;
+  }
+
+  .forms__emotions {
+    padding-top: 30px;
+    border: 2px solid #e5e5e5;
+    width: 616px;
+    height: 289px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .forms__text {
+    width: 816px;
+    height: 124px;
+  }
+
+  .forms__emotions {
+    padding-top: 15px;
+    width: 936px;
+    height: 213px;
   }
 }
 .award {
