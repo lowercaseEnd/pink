@@ -26,10 +26,10 @@
       <nav class="main-header__nav nav">
         <ul class="main-nav">
           <li class="main-nav__item main-nav__active">
-            <a class="main-nav__link main-nav__link-active">главная</a>
+            <a class="main-nav__link" href="index.html">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">фотографии</a>
+            <a class="main-nav__link main-nav__link-active" href="#">фотографии</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">конкурс</a>
@@ -143,8 +143,71 @@
           </div>
         </li>
       </ul>
+      <p class="upload-pictures"><span class="overshadow-them">Затмите их всех!</span>
+        Выкладывайте все, что накопилось в телефоне!
+      </p>
+    </section>
+    <section class="editor">
+      <h2 class="visually-hidden">Редактор фото</h2>
+      <picture class="editor__picture">
+        <source media="(min-width: 990px)" srcset="img/photo-road-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+        <img src="img/photo-road-mobile@1x.jpg" alt="Обработка фото">
+      </picture>
+      <form action="" method="get" class="photo-editor editor__form">
+        <fieldset class="photo-editor--wrapper photo-editor__size">
+          <legend class="visually-hidden">Изменение размера фото</legend>
+          <input type="radio" name="editor" id="size" class="photo-editor__size" checked>
+          <label for="size" title="Размер фото"></label>
+          <input class="photo-editor__range photo-editor__range--size" type="range" name="range--size">
+        </fieldset>
+        <fieldset class="photo-editor--wrapper photo-editor__color">
+          <legend class="visually-hidden">Изменение цвета фото</legend>
+          <input type="radio" name="editor" id="color" class="photo-editor__color" checked>
+          <label for="size" title="Цвет фото"></label>
+          <input class="photo-editor__range photo-editor__range--color" type="range" name="range--color">
+        </fieldset>
+        <fieldset class="photo-editor--wrapper photo-editor__bright">
+          <legend class="visually-hidden">Изменение яркости фото</legend>
+          <input type="radio" name="editor" id="bright" class="photo-editor__bright" checked>
+          <label for="size" title="Яркость фото"></label>
+          <input class="photo-editor__range photo-editor__range--bright" type="range" name="range--bright">
+        </fieldset>
+        <fieldset class="photo-editor--wrapper photo-editor__send">
+          <legend class="visually-hidden">Отправка фото</legend>
+          <button class="photo-editor__button" type="button">Запостить</button>
+          <button class="photo-editor__button photo-editor__button--cancel" type="button">отмена</button>
+        </fieldset>
+      </form>
     </section>
   </main>
+  <footer class="social-links">
+    <h2 class="visually-hidden">Ссылки на соцсети</h2>
+    <a href="#" class="social-links__logo-link">
+      <picture class="main-footer__logo--picture">
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg 1x">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения" width="147" height="40"
+          class="social-links__logo-footer">
+      </picture>
+    </a>
+    <ul class="social-links__list media-list">
+      <li class="media-list__item"><a class="media-list__link" href="#">
+          <object data="img/icon-twitter.svg" type="image/svg+xml" width="18" height="14">Твиттер академии</object>
+        </a></li>
+      <li class="media-list__item"><a class="media-list__link" href="#">
+          <object data="img/icon-facebook.svg" type="image/svg+xml" width="9" height="18">Фейсбук академии</object>
+        </a></li>
+      <li class="media-list__item"><a class="media-list__link" href="#">
+          <object data="img/icon-youtube.svg" type="image/svg+xml" width="15" height="13">Ютуб академии</object>
+        </a></li>
+    </ul>
+    <div class="trademark">
+      <b class="social-links__trademark">Разработано</b>
+      <a href="#" class="trademark-link">
+        <object data="img/logo-htmlacademy.svg" type="data/svg+xml" width="27" height="34">Логотип академии</object>
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

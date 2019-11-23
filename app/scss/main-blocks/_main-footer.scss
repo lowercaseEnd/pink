@@ -26,9 +26,7 @@
 .contact-list__address-info {
   color: $pink-color;
 }
-.social-links {
-  display: none;
-}
+
 @media (min-width: $tablet-width) {
   .social-links {
     display: block;
