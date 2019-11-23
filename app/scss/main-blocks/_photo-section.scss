@@ -1,0 +1,17 @@
+@import "../variables";
+
+.photo-section__text {
+  font-size: 14px;
+  color: $dark-color;
+  width: 210px;
+  line-height: 1.6;
+  margin: 55px auto;
+  text-align: center;
+}
+@media (min-width: $tablet-width) {
+  .photo-section__text {
+    width: 500px;
+    line-height: 1.4;
+    font-size: 18px;
+  }
+}
