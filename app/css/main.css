@@ -1762,13 +1762,34 @@ img {
   text-align: initial;
 }
 
-.photo-list__item,
-.jump-wrapper {
+.photo-list__item {
   width: 280px;
   margin: 0 auto;
   background-color: #f2f2f2;
   min-height: 305px;
   margin-top: 20px;
+}
+
+.jump-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.top-comment--wrapper {
+  margin: 0 auto;
+  margin-top: -17px;
+  width: 280px;
+  background-color: #f2f2f2;
+}
+
+.top-comment--by {
+  padding-top: 10px;
+}
+
+.main-photo {
+  display: block;
+  width: 100%;
+  height: fit-content;
 }
 
 .photo-list__likes,
@@ -1877,14 +1898,38 @@ img {
     width: 510px;
   }
 
-  .main-photo {
-    height: fit-content;
-    width: 100%;
-    display: block;
-  }
-
   .jump-wrapper {
     width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .photo-list {
+    width: 960px;
+  }
+
+  .photo-list__item {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  .top-comment--wrapper {
+    width: 940px;
+  }
+
+  .top-comment--comment {
+    width: 750px;
+  }
+
+  .top-comment--likes::before {
+    left: 160px;
+  }
+
+  .top-comment--likes {
+    padding-right: 105px;
+  }
+
+  .top-comment--by {
+    padding-left: 61px;
   }
 }
 
