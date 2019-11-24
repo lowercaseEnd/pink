@@ -15,7 +15,8 @@
   display: block;
 }
 @media (min-width: $tablet-width) {
-  .photo-section__text {
+  .photo-section__text,
+  .upload-pictures  {
     width: 500px;
     line-height: 1.4;
     font-size: 18px;

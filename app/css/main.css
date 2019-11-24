@@ -1714,7 +1714,8 @@ img {
 }
 
 @media (min-width: 660px) {
-  .photo-section__text {
+  .photo-section__text,
+.upload-pictures {
     width: 500px;
     line-height: 1.4;
     font-size: 18px;
@@ -1727,6 +1728,7 @@ img {
 .photo-list__item {
   width: 100%;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .main-photo {
@@ -1760,10 +1762,13 @@ img {
   text-align: initial;
 }
 
-.photo-wrapper {
+.photo-list__item,
+.jump-wrapper {
   width: 280px;
   margin: 0 auto;
   background-color: #f2f2f2;
+  min-height: 305px;
+  margin-top: 20px;
 }
 
 .photo-list__likes,
@@ -1774,11 +1779,57 @@ img {
   padding-left: 50px;
 }
 
+.photo-button {
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 9px;
+}
+
+.photo-button::before {
+  content: "";
+  width: 21px;
+  height: 16px;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 660px) {
+  .photo-wrapper {
+    min-height: 455px;
+  }
+
+  .photo-button::before {
+    left: 240px;
+  }
+
+  .photo-button,
+.photo-name {
+    padding-left: 35px;
+  }
+
+  .photo-list__comment {
+    width: 230px;
+    min-height: 50px;
+  }
+
+  .photo-list__like--by {
+    margin-bottom: 10px;
+    min-height: 43px;
+  }
+
+  .photo-list__item:nth-child(2n+2) {
+    margin-left: 16px;
+  }
+
   .photo-list {
     display: flex;
     flex-wrap: wrap;
-    width: 620px;
+    width: 640px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -1787,8 +1838,16 @@ img {
     width: 300px;
   }
 
-  .photo-list__likes {
-    padding-left: 20px;
+  .comment-wrapper {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .top-comment--likes::before {
+    left: 180px;
+    top: 17px;
   }
 
   .top-comment--wrapper {
@@ -1801,13 +1860,14 @@ img {
 
   .top-comment--by {
     order: 1;
-    padding-left: 36px;
+    padding-left: 21px;
     margin-bottom: 5px;
   }
 
   .top-comment--likes {
     order: 2;
-    margin-bottom: 0cm;
+    margin-bottom: 0;
+    margin-top: 10px;
     padding-right: 95px;
   }
 

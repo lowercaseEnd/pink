@@ -7,6 +7,7 @@
 .photo-list__item {
   width: 100%;
   margin: 0 auto;
+  margin-top: 20px;
 }
 .main-photo {
   max-width: 100%;
@@ -23,7 +24,6 @@
 .photo-list__comment,
 .top-comment--comment {
   width: 240px;
-  
   margin: 0 auto;
 }
 .photo-name {
@@ -36,10 +36,13 @@
   line-height: 2;
   text-align: initial;
 }
-.photo-wrapper {
+.photo-list__item, 
+.jump-wrapper {
   width: $mobile-block;
   margin: 0 auto;
   background-color: $bg-color;
+  min-height: 305px;
+  margin-top: 20px;
 }
 .photo-list__likes,
 .top-comment--likes {
@@ -48,22 +51,69 @@
   line-height: 2;
   padding-left: 50px;
 }
+//heart on the bottom left
+.photo-button {
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 9px;
+}
+.photo-button::before {
+  content: "";
+  width: 21px;
+  height: 16px;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+}
 
 @media (min-width: $tablet-width) {
+  .photo-wrapper {
+    min-height: 455px;
+  }
+  .photo-button::before {
+    left: 240px;
+  }
+  .photo-button,
+  .photo-name {
+    padding-left: 35px;
+  }
+  .photo-list__comment {
+    width: 230px;
+    min-height: 50px;
+  }
+  .photo-list__like--by {
+    margin-bottom: 10px;
+    min-height: 43px;
+  }
+  .photo-list__item:nth-child(2n + 2) {
+    margin-left: 16px;
+  }
   .photo-list {
     display: flex;
     flex-wrap: wrap;
-    width: 620px;
+    width: 640px;
     margin: 0 auto;
     margin-top: 50px;
   }
   .photo-list__item {
     width: 300px;
   }
-  .photo-list__likes {
-    padding-left: 20px;
+
+  .comment-wrapper {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    margin: 0 auto;
   }
   //top comment
+  .top-comment--likes::before {
+    left: 180px;
+    top: 17px;
+  }
   .top-comment--wrapper {
     display: flex;
     width: 620px;
@@ -73,12 +123,13 @@
   }
   .top-comment--by {
     order: 1;
-    padding-left: 36px;
+    padding-left: 21px;
     margin-bottom: 5px;
   }
   .top-comment--likes {
     order: 2;
-    margin-bottom: 0cm;
+    margin-bottom: 0;
+    margin-top: 10px;
     padding-right: 95px;
   }
   .top-comment--comment {
@@ -90,7 +141,6 @@
     height: fit-content;
     width: 100%;
     display: block;
-
   }
   .jump-wrapper {
     width: 100%;
