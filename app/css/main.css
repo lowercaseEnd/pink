@@ -1734,14 +1734,16 @@ img {
 }
 
 .photo-name,
-.photo-list__comment {
+.photo-list__comment,
+.top-comment--comment {
   font-size: 14px;
   line-height: 1.7;
   color: #283645;
   text-align: initial;
 }
 
-.photo-list__comment {
+.photo-list__comment,
+.top-comment--comment {
   width: 240px;
   margin: 0 auto;
 }
@@ -1764,11 +1766,66 @@ img {
   background-color: #f2f2f2;
 }
 
-.photo-list__likes {
+.photo-list__likes,
+.top-comment--likes {
   color: #d22856;
   font-size: 14px;
   line-height: 2;
   padding-left: 50px;
+}
+
+@media (min-width: 660px) {
+  .photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .photo-list__item {
+    width: 300px;
+  }
+
+  .photo-list__likes {
+    padding-left: 20px;
+  }
+
+  .top-comment--wrapper {
+    display: flex;
+    width: 620px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .top-comment--by {
+    order: 1;
+    padding-left: 36px;
+    margin-bottom: 5px;
+  }
+
+  .top-comment--likes {
+    order: 2;
+    margin-bottom: 0cm;
+    padding-right: 95px;
+  }
+
+  .top-comment--comment {
+    order: 3;
+    padding-bottom: 20px;
+    width: 510px;
+  }
+
+  .main-photo {
+    height: fit-content;
+    width: 100%;
+    display: block;
+  }
+
+  .jump-wrapper {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
