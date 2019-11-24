@@ -1675,7 +1675,7 @@ img {
   font-size: 24px;
   font-weight: lighter;
   line-height: 1.4;
-  width: 270px;
+  max-width: 270px;
   margin: 0 auto;
   color: #ffffff;
   text-align: center;
@@ -1699,7 +1699,8 @@ img {
     padding-top: 190px;
   }
 }
-.photo-section__text {
+.photo-section__text,
+.upload-pictures {
   font-size: 14px;
   color: #283645;
   width: 210px;
@@ -1708,12 +1709,66 @@ img {
   text-align: center;
 }
 
+.overshadow-them {
+  display: block;
+}
+
 @media (min-width: 660px) {
   .photo-section__text {
     width: 500px;
     line-height: 1.4;
     font-size: 18px;
   }
+}
+.photo-list {
+  padding: 0;
+}
+
+.photo-list__item {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-photo {
+  max-width: 100%;
+}
+
+.photo-name,
+.photo-list__comment {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #283645;
+  text-align: initial;
+}
+
+.photo-list__comment {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.photo-name {
+  padding-left: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.photo-time {
+  font-size: 12px;
+  line-height: 2;
+  text-align: initial;
+}
+
+.photo-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.photo-list__likes {
+  color: #d22856;
+  font-size: 14px;
+  line-height: 2;
+  padding-left: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
