@@ -1852,7 +1852,7 @@ img {
     flex-wrap: wrap;
     width: 640px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .photo-list__item {
@@ -1904,12 +1904,12 @@ img {
 }
 @media (min-width: 960px) {
   .photo-list {
-    width: 960px;
+    width: 940px;
   }
 
-  .photo-list__item {
-    margin-left: 20px;
-    margin-right: 0;
+  .photo-list__item,
+.photo-list__item:nth-child(2n+2) {
+    margin-left: 0;
   }
 
   .top-comment--wrapper {
