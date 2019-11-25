@@ -25,8 +25,8 @@
 .photo-editor__radio--bright:checked ~ .photo-editor__range--bright {
   display: block;
   position: absolute;
-  top: 90px;
-  left: 70px;
+  top: 120px;
+  left: 12px;
 }
 
 .photo-editor {
@@ -75,4 +75,84 @@
   background-position: 5px center;
   opacity: 0.9;
   cursor: pointer;
+}
+
+//slider
+.photo-editor__range {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 2px;
+  outline: none;
+  background-color: $dark-color;
+}
+.photo-editor__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: $white-color;
+  border-radius: 50%;
+  border: 2px solid $pink-color;
+  cursor: pointer;
+}
+
+.photo-editor__range::-moz-range-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: $white-color;
+  border-radius: 50%;
+  border: 2px solid $pink-color;
+  cursor: pointer;
+}
+@media (min-width: $tablet-width) {
+  .editor-wrapper {
+    display: flex;
+    width: 640px;
+    margin: 0 auto;
+  }
+  .photo-editor--wrapper {
+    padding: 0;
+  }
+  .photo-editor__range {
+    display: inline-block;
+    position: initial;
+    width: 260px;
+  }
+  .editor__photo {
+    margin-right: auto;
+    margin-left: 2%;
+  }
+  .photo-editor__radio--size:checked ~ .photo-editor__range--size,
+  .photo-editor__radio--color:checked ~ .photo-editor__range--color,
+  .photo-editor__radio--bright:checked ~ .photo-editor__range--bright {
+    display: inline-block;
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+  .control-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 340px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .control-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 63px;
+    left: 21px;
+    border-bottom: 2px solid $dark-color;
+    opacity: 0.1;
+    width: 90%;
+    height: 2px;
+  }
+  //photo
+  .editor__photo {
+    max-width: 300px;
+    height: 400px;
+  }
 }
