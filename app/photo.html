@@ -149,26 +149,26 @@
       <picture class="editor__picture">
         <source media="(min-width: 990px)" srcset="img/photo-road-desktop@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-        <img src="img/photo-road-mobile@1x.jpg" alt="Обработка фото">
+        <img class="editor__photo" src="img/photo-road-mobile@1x.jpg" alt="Обработка фото">
       </picture>
       <form action="" method="get" class="photo-editor editor__form">
         <fieldset class="photo-editor--wrapper photo-editor__size">
           <legend class="visually-hidden">Изменение размера фото</legend>
-          <input type="radio" name="editor" id="size" class="photo-editor__size" checked>
-          <label for="size" title="Размер фото"></label>
+          <input type="radio" name="editor" id="size" class="photo-editor__radio photo-editor__radio--size" checked>
           <input class="photo-editor__range photo-editor__range--size" type="range" name="range--size">
+          <label class="photo-editor__label photo-editor__label--size" for="size" title="Размер фото"></label>
         </fieldset>
         <fieldset class="photo-editor--wrapper photo-editor__color">
           <legend class="visually-hidden">Изменение цвета фото</legend>
-          <input type="radio" name="editor" id="color" class="photo-editor__color" checked>
-          <label for="size" title="Цвет фото"></label>
+          <input type="radio" name="editor" id="color" class="photo-editor__radio photo-editor__radio--color">
           <input class="photo-editor__range photo-editor__range--color" type="range" name="range--color">
+          <label class="photo-editor__label photo-editor__label--color"  for="color" title="Цвет фото"></label>
         </fieldset>
         <fieldset class="photo-editor--wrapper photo-editor__bright">
           <legend class="visually-hidden">Изменение яркости фото</legend>
-          <input type="radio" name="editor" id="bright" class="photo-editor__bright" checked>
-          <label for="size" title="Яркость фото"></label>
+          <input type="radio" name="editor" id="bright" class="photo-editor__radio photo-editor__radio--bright">
           <input class="photo-editor__range photo-editor__range--bright" type="range" name="range--bright">
+          <label class="photo-editor__label photo-editor__label--bright"  for="bright" title="Яркость фото"></label>
         </fieldset>
         <fieldset class="photo-editor--wrapper photo-editor__send">
           <legend class="visually-hidden">Отправка фото</legend>
