@@ -1817,6 +1817,38 @@ img {
   height: fit-content;
 }
 
+.photo-name--top {
+  position: relative;
+}
+
+.photo-name--top::after {
+  content: "Панорама дня";
+  font-size: 12px;
+  line-height: 2;
+  color: #ffffff;
+  width: 140px;
+  height: 36px;
+  background-color: #d22856;
+  position: absolute;
+  top: -150px;
+  left: 141px;
+  padding-top: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 660px) {
+  .photo-name--top::after {
+    top: -490px;
+    left: 461px;
+  }
+}
+@media (min-width: 960px) {
+  .photo-name--top::after {
+    top: -500px;
+    left: 738px;
+  }
+}
 .photo-list__likes,
 .top-comment--likes {
   color: #d22856;

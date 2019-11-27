@@ -62,6 +62,37 @@
   width: 100%;
   height: fit-content;
 }
+//comment on the top right of the photo
+.photo-name--top {
+  position: relative;
+}
+.photo-name--top::after {
+  content: "Панорама дня";
+  font-size: 12px;
+  line-height: 2;
+  color: $white-color;
+  width: 140px;
+  height: 36px;
+  background-color: $pink-color;
+  position: absolute;
+  top: -150px;
+  left: 141px;
+  padding-top: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: $tablet-width) {
+  .photo-name--top::after {
+    top: -490px;
+    left: 461px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .photo-name--top::after {
+    top: -500px;
+    left: 738px;
+  }
+}
 .photo-list__likes,
 .top-comment--likes {
   color: $pink-color;
