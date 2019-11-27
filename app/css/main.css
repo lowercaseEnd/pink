@@ -1972,10 +1972,10 @@ img {
 }
 
 .photo-editor--wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-.photo-editor__send {
+.buttons-wrapper {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
@@ -1990,6 +1990,7 @@ img {
   opacity: 0.9;
   background-repeat: no-repeat;
   cursor: pointer;
+  background-size: contain;
 }
 
 .photo-editor__label--bright {
@@ -2012,6 +2013,38 @@ img {
   background-position: center;
 }
 
+@media (min-width: 660px) {
+  .photo-editor__label--size {
+    width: 22px;
+    height: 22px;
+  }
+
+  .photo-editor__label--color {
+    width: 24px;
+    height: 22px;
+  }
+
+  .photo-editor__label--bright {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (min-width: 960px) {
+  .photo-editor__label--size {
+    width: 44px;
+    height: 44px;
+  }
+
+  .photo-editor__label--color {
+    width: 48px;
+    height: 43px;
+  }
+
+  .photo-editor__label--bright {
+    width: 32px;
+    height: 38px;
+  }
+}
 .photo-editor__range {
   -webkit-appearance: none;
   width: 90%;
@@ -2044,9 +2077,12 @@ img {
 @media (min-width: 660px) {
   .photo-editor {
     margin: initial;
+    width: 310px;
   }
 
   .editor-wrapper {
+    padding-top: 20px;
+    min-height: 455px;
     display: flex;
     width: 640px;
     margin: 0 auto;
@@ -2060,7 +2096,7 @@ img {
   .photo-editor__range {
     display: inline-block;
     position: initial;
-    width: 260px;
+    width: 240px;
   }
 
   .editor__photo {
@@ -2080,7 +2116,7 @@ img {
   .control-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    width: 340px;
+    width: 280px;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
@@ -2090,11 +2126,11 @@ img {
   .control-wrapper::after {
     content: "";
     position: absolute;
-    top: 63px;
-    left: 21px;
+    top: 53px;
+    left: 1px;
     border-bottom: 2px solid #283645;
     opacity: 0.1;
-    width: 90%;
+    width: 100%;
     height: 2px;
   }
 
@@ -2114,7 +2150,7 @@ img {
     width: 940px;
     min-height: 465px;
     padding-top: 35px;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .control-wrapper::after {
@@ -2124,10 +2160,19 @@ img {
   .photo-editor {
     width: 300px;
   }
+
+  .photo-editor__range {
+    width: 280px;
+  }
+
+  .control-wrapper {
+    width: 350px;
+  }
 }
 .photo-editor__button {
   font-size: 18px;
   line-height: 18px;
+  font-weight: bold;
   border: 3px solid #d22856;
   border-radius: 50px;
   color: #d22856;
@@ -2163,6 +2208,18 @@ img {
   color: rgba(255, 255, 255, 0.3);
   background-color: #283645;
   opacity: 0.3;
+}
+
+@media (min-width: 960px) {
+  .photo-editor__button {
+    width: 183px;
+  }
+
+  .buttons-wrapper {
+    flex-direction: row;
+    width: 410px;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
