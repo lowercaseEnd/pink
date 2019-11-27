@@ -52,29 +52,26 @@
 }
 .photo-editor__label {
   display: inline-block;
-  width: 48px;
-  height: 44px;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 .photo-editor__label--bright {
+  width: 32px;
+  height: 38px;
   background-image: url("../img/icon-editor-contrast.svg");
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  opacity: 0.9;
-  cursor: pointer;
+  background-position: 0 center;
 }
 .photo-editor__label--color {
+  width: 48px;
+  height: 43px;
   background-image: url("../img/icon-editor-fill.svg");
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  opacity: 0.9;
-  cursor: pointer;
 }
 .photo-editor__label--size {
+  width: 44px;
+  height: 44px;
   background-image: url("../img/icon-editor-crop.svg");
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  opacity: 0.9;
-  cursor: pointer;
+  background-position: center;
 }
 
 //slider
@@ -106,10 +103,14 @@
   cursor: pointer;
 }
 @media (min-width: $tablet-width) {
+  .photo-editor {
+    margin: initial;
+  }
   .editor-wrapper {
     display: flex;
     width: 640px;
     margin: 0 auto;
+    justify-content: space-between;
   }
   .photo-editor--wrapper {
     padding: 0;
@@ -155,4 +156,59 @@
     max-width: 300px;
     height: 400px;
   }
+}
+@media (min-width: $desktop-width) {
+  .editor {
+    padding-top: 0;
+    background-color: $white-color;
+  }
+  .editor-wrapper {
+    background-color: $bg-color;
+    width: 940px;
+    min-height: 465px;
+    padding-top: 35px;
+    justify-content: space-around;
+  }
+  .control-wrapper::after {
+    width: 100%;
+  }
+  .photo-editor {
+    width: 300px;
+  }
+}
+
+//buttons to post pics
+.photo-editor__button {
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid $pink-color;
+  border-radius: 50px;
+  color: $pink-color;
+  width: 280px;
+  height: 55px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.photo-editor__button:hover {
+  color: $white-color;
+  background-color: $pink-color;
+}
+.photo-editor__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.photo-editor__button--cancel {
+  border-color: rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+}
+.photo-editor__button--cancel:hover {
+  background-color: $white-color;
+  border-color: $dark-color;
+  color: $dark-color;
+  opacity: 0.3;
+}
+.photo-editor__button--cancel:active {
+  border-color: $dark-color;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $dark-color;
+  opacity: 0.3;
 }
