@@ -942,6 +942,17 @@ img {
   color: #d22856;
 }
 
+.contact-list__address-info:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+
+.contact-list__address-info:active {
+  color: #283645;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
 @media (min-width: 660px) {
   .social-links {
     display: block;
@@ -1060,6 +1071,14 @@ img {
 .media-list__item {
   border: 3px solid #fae9ee;
   border-radius: 50%;
+}
+
+.media-list__item:hover {
+  border-color: #283645;
+}
+
+.media-list__item:active {
+  opacity: 0.1;
 }
 
 .media-list__item:nth-child(1) {

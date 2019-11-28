@@ -23,6 +23,14 @@
   border: 3px solid #fae9ee;
   border-radius: 50%;
 }
+//change appearance on hover
+.media-list__item:hover {
+  border-color: $dark-color;
+}
+.media-list__item:active {
+  opacity: 0.1;
+}
+//change size so that links look same
 .media-list__item:nth-child(1) {
   padding: 19px 13px 13px 14px;
 }

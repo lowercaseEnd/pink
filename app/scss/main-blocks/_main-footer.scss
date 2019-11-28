@@ -26,7 +26,16 @@
 .contact-list__address-info {
   color: $pink-color;
 }
-
+//change styles for mail link on hover etc
+.contact-list__address-info:hover {
+  color: $dark-color;
+  text-decoration: underline;
+}
+.contact-list__address-info:active {
+  color: $dark-color;
+  opacity: 0.3;
+  text-decoration: none;
+}
 @media (min-width: $tablet-width) {
   .social-links {
     display: block;
