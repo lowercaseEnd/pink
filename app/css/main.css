@@ -1002,6 +1002,26 @@ img {
   margin-bottom: 1px;
 }
 
+.header__toggle {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border: none;
+  background-color: rgba(40, 54, 69, 0.3);
+}
+
+.header__toggle--closed:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+  opacity: 0.7;
+}
+
+.header__toggle--closed:active::before {
+  background-color: #592f47;
+  box-shadow: 0 10px 0 0 #592f47, 0 20px 0 0 #592f47;
+}
+
 .main-header__link {
   color: #ffffff;
 }
