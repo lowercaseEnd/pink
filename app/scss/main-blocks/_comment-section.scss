@@ -49,6 +49,22 @@
   border: 3px solid $white-color;
   cursor: pointer;
 }
+//change styles on hover
+.input-comment1:not(:checked) ~ .label-wrapper label[for="comment1"],
+.input-comment2:not(:checked) ~ .label-wrapper label[for="comment2"],
+.input-comment3:not(:checked) ~ .label-wrapper label[for="comment3"] {
+  opacity: 0.3;
+}
+.input-comment1:not(:checked):hover ~ .label-wrapper label[for="comment1"],
+.input-comment2:not(:checked):hover ~ .label-wrapper label[for="comment2"],
+.input-comment3:not(:checked):hover ~ .label-wrapper label[for="comment3"] {
+  opacity: 0.6;
+}
+.input-comment1:not(:checked):active ~ .label-wrapper label[for="comment1"],
+.input-comment2:not(:checked):active ~ .label-wrapper label[for="comment2"],
+.input-comment3:not(:checked):active ~ .label-wrapper label[for="comment3"] {
+  opacity: 0.1;
+}
 //change a border of button and comment if checked
 .input-comment1:checked ~ .label-wrapper label[for="comment1"],
 .input-comment2:checked ~ .label-wrapper label[for="comment2"],

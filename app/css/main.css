@@ -573,6 +573,24 @@ img {
   cursor: pointer;
 }
 
+.input-comment1:not(:checked) ~ .label-wrapper label[for=comment1],
+.input-comment2:not(:checked) ~ .label-wrapper label[for=comment2],
+.input-comment3:not(:checked) ~ .label-wrapper label[for=comment3] {
+  opacity: 0.3;
+}
+
+.input-comment1:not(:checked):hover ~ .label-wrapper label[for=comment1],
+.input-comment2:not(:checked):hover ~ .label-wrapper label[for=comment2],
+.input-comment3:not(:checked):hover ~ .label-wrapper label[for=comment3] {
+  opacity: 0.6;
+}
+
+.input-comment1:not(:checked):active ~ .label-wrapper label[for=comment1],
+.input-comment2:not(:checked):active ~ .label-wrapper label[for=comment2],
+.input-comment3:not(:checked):active ~ .label-wrapper label[for=comment3] {
+  opacity: 0.1;
+}
+
 .input-comment1:checked ~ .label-wrapper label[for=comment1],
 .input-comment2:checked ~ .label-wrapper label[for=comment2],
 .input-comment3:checked ~ .label-wrapper label[for=comment3] {
@@ -789,6 +807,24 @@ img {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+}
+
+.input-offer1:not(:checked) ~ .offers-label-wrapper label[for=offer1],
+.input-offer2:not(:checked) ~ .offers-label-wrapper label[for=offer2],
+.input-offer3:not(:checked) ~ .offers-label-wrapper label[for=offer3] {
+  opacity: 0.3;
+}
+
+.input-offer1:not(:checked):hover ~ .offers-label-wrapper label[for=offer1],
+.input-offer2:not(:checked):hover ~ .offers-label-wrapper label[for=offer2],
+.input-offer3:not(:checked):hover ~ .offers-label-wrapper label[for=offer3] {
+  opacity: 0.6;
+}
+
+.input-offer1:not(:checked):active ~ .offers-label-wrapper label[for=offer1],
+.input-offer2:not(:checked):active ~ .offers-label-wrapper label[for=offer2],
+.input-offer3:not(:checked):active ~ .offers-label-wrapper label[for=offer3] {
+  opacity: 0.1;
 }
 
 .input-offer1:checked ~ .offers-label-wrapper label[for=offer1],

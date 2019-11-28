@@ -107,6 +107,22 @@
   border: none;
   cursor: pointer;
 }
+//change styles on hover
+.input-offer1:not(:checked) ~ .offers-label-wrapper label[for="offer1"],
+.input-offer2:not(:checked) ~ .offers-label-wrapper label[for="offer2"],
+.input-offer3:not(:checked) ~ .offers-label-wrapper label[for="offer3"] {
+  opacity: 0.3;
+}
+.input-offer1:not(:checked):hover ~ .offers-label-wrapper label[for="offer1"],
+.input-offer2:not(:checked):hover ~ .offers-label-wrapper label[for="offer2"],
+.input-offer3:not(:checked):hover ~ .offers-label-wrapper label[for="offer3"] {
+  opacity: 0.6;
+}
+.input-offer1:not(:checked):active ~ .offers-label-wrapper label[for="offer1"],
+.input-offer2:not(:checked):active ~ .offers-label-wrapper label[for="offer2"],
+.input-offer3:not(:checked):active ~ .offers-label-wrapper label[for="offer3"] {
+  opacity: 0.1;
+}
 .input-offer1:checked ~ .offers-label-wrapper label[for="offer1"],
 .input-offer2:checked ~ .offers-label-wrapper label[for="offer2"],
 .input-offer3:checked ~ .offers-label-wrapper label[for="offer3"] {
