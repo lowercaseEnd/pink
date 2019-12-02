@@ -7,18 +7,49 @@
   width: 100%;
   margin-bottom: 1px;
 }
-//button 
+.main-header {
+  position: relative;
+  z-index: 2;
+}
+//burger menu
+@media(max-width: $desktop-width) {
+  .nav--nojs {
+    display: none;
+  }
+}
+.listen-nav--closed .header__toggle {
+  background: rgba(40, 54, 69, 0.3);
+}
 .header__toggle {
   cursor: pointer;
   position: relative;
   width: 50px;
   height: 25px;
   border: none;
+  outline: none;
   background-color: rgba(40, 54, 69, 0.3);
 }
+.listen-nav--closed .header__logo {
+  padding-bottom: 7px;
+}
+.listen-nav--closed .header__toggle {
+  background: rgba(40, 54, 69, 0.3);
+}
+
+.header__toggle--closed::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $white-color;
+  box-shadow: 0 10px 0 0 $white-color, 0 20px 0 0 $white-color;
+}
+
 .header__toggle--closed:hover::before {
-  background-color: #d22856;
-  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+  background-color: $pink-color;
+  box-shadow: 0 10px 0 0 $pink-color, 0 20px 0 0 $pink-color;
   opacity: 0.7;
 }
 
@@ -26,10 +57,75 @@
   background-color: #592f47;
   box-shadow: 0 10px 0 0 #592f47, 0 20px 0 0 #592f47;
 }
+.header__toggle--opened {
+  width: 25px;
+  background: rgba(40, 54, 69, 0.3);
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -2px;
+    width: 30px;
+    height: 5px;
+    background-color: $white-color;
+    border-radius: 20px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.header__toggle--opened:hover {
+  &::before,
+  &::after {
+    background-color: $pink-color;
+    opacity: 0.7;
+  }
+}
+
+.header__toggle--opened:active {
+  &::before,
+  &::after {
+    background-color: #592f47;
+    opacity: 0.7;
+  }
+}
+@media (min-width: $tablet-width) {
+  .header__logo {
+    width: 150px;
+    margin: 20px 0;
+    padding: 7px 0 17px;
+  }
+
+  .listen-nav--closed .header__logo {
+    padding-bottom: 18px;
+  }
+
+  .header__wrapper-color-desktop {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+
+  .nav--opened .header__toggle:active {
+    &::before,
+    &::after {
+      background-color: $pink-color;
+      opacity: 0.7;
+    }
+  }
+}
 //links
 .main-header__link {
-  color: $white-color;
+  color: $pink-color;
 }
 //links states
 .main-header__link {
@@ -51,7 +147,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    
   }
   .header-wrapper-bg-color {
     width: 100%;

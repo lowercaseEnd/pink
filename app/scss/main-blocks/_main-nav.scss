@@ -17,8 +17,11 @@
   margin: 0 auto;
 }
 //background color at mobile at tablet widths
-.header-wrapper-menu {
+.header-wrapper-menu--closed {
   width: 100%;
+  background-color: rgb(29, 39, 50, 0.7);
+}
+.header-wrapper-menu--opened {
   background-color: $dark-color;
 }
 //shadows at top and bottom of the menu items
