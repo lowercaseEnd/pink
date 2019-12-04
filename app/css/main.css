@@ -2467,4 +2467,76 @@ img {
   margin-top: -90px;
 }
 
+.modal {
+  display: none;
+  width: 300px;
+  min-height: 290px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.report {
+  display: block;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #000000;
+  padding-bottom: 40px;
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #283645;
+  width: 300px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.modal__button {
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 276px;
+  height: 59px;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+}
+
+@media (min-width: 660px) {
+  .report {
+    font-size: 30px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .modal {
+    width: 720px;
+    box-shadow: -1px 3px 5px 3px rgba(0, 1, 1, 0.15);
+  }
+
+  .color-wrapper--success {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .color-wrapper {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .modal__button--success {
+    width: 456px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
