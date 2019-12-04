@@ -1441,6 +1441,14 @@ img {
   margin: 0;
 }
 
+.apps-list__label:hover::before {
+  border-color: #283645;
+}
+
+.apps-list__label:active::before {
+  border-color: #d22856;
+}
+
 .apps-list__radio:checked ~ .apps-list__label::after {
   content: "";
   position: absolute;
@@ -1520,6 +1528,14 @@ img {
   height: 35px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+}
+
+.list-checkbox__label:hover::before {
+  border-color: #283645;
+}
+
+.list-checkbox__label:active::before {
+  border-color: #d22856;
 }
 
 .list-checkbox__checkbox:checked ~ .list-checkbox__label::before {
