@@ -30,6 +30,7 @@ navToggle.addEventListener("click", function() {
     //move main content down
     moveTopMain.classList.remove("main-content--move-top");
   } else {
+    //add styles to hide menu and delete styles that showed them
     navToggle.classList.add('header__toggle--closed');
     formBG.classList.add('listen-nav--closed');
     navToggle.classList.remove('header__toggle--opened');
