@@ -77,12 +77,11 @@ img {
   width: 280px;
   min-height: 63px;
   padding: 30px 10px;
-  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 black;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
 }
 
 .main-nav__item {
-  margin-top: 2px;
-  margin-bottom: 1px;
   width: 100%;
 }
 
@@ -95,11 +94,15 @@ img {
   text-decoration: none;
 }
 
+.main-nav__link--active {
+  text-decoration: underline;
+}
+
 .main-nav__item a[href]:hover {
   color: #d22856;
 }
 
-.main-nav__item:active {
+.main-nav__item a[href]:active {
   color: rgba(210, 40, 86, 0.3);
 }
 
