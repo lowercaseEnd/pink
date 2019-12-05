@@ -8,11 +8,13 @@ let formBG = document.querySelector(".listen-nav");
 let headerWrapper = document.querySelector(".header-wrapper-menu--closed");
 //main content of the page
 let moveTopMain = document.querySelector(".main-content");
+
+let header = document.querySelector(".main-header--nojs");
 // navMain.classList.remove("nav--nojs");
 formBG.classList.add("listen-nav--closed");
 //move main content up
 moveTopMain.classList.add("main-content--move-top");
-navMain.classList.remove("nav--nojs");
+header.classList.remove("main-header--nojs");
 
 navToggle.addEventListener("click", function() {
   if(navToggle.classList.contains("header__toggle--closed")) {
@@ -23,7 +25,6 @@ navToggle.addEventListener("click", function() {
     navToggle.classList.add("header__toggle--opened");
     //display links
     navMain.classList.remove("nav--closed");
-    navMain.classList.remove("nav--nojs");
     navMain.classList.add("nav--opened");
     //change bg color
     headerWrapper.classList.remove("header-wrapper-menu--closed");
@@ -37,7 +38,6 @@ navToggle.addEventListener("click", function() {
     navToggle.classList.remove('header__toggle--opened');
     navToggle.classList.add("header__toggle--closed");
     navMain.classList.add('nav--closed');
-    navMain.classList.add("nav--nojs");
     navMain.classList.remove('nav--opened');
     headerWrapper.classList.add("header-wrapper-menu--closed");
     headerWrapper.classList.remove("header-wrapper-menu--opened");
