@@ -9,9 +9,9 @@
   <title>Pink photo page</title>
 </head>
 
-<body>
+<body class="listen-nav">
   <header class="main-header">
-    <div class="header-wrapper-menu">
+    <div class="header-wrapper-menu header-wrapper-menu--closed">
       <div class="header-wrapper-logo">
         <a class="main-header__link main-header__link-active">
           <picture class="main-header__logo">
@@ -21,15 +21,15 @@
           </picture>
 
         </a>
-        <button class="header__toggle" type="button" title="Кнопка меню"></button>
+        <button class="header__toggle header__toggle--closed" type="button" title="Показать/убрать меню"></button>
       </div>
-      <nav class="main-header__nav nav">
+      <nav class="main-header__nav nav nav--nojs nav--closed">
         <ul class="main-nav">
-          <li class="main-nav__item main-nav__active">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link-active" href="#">фотографии</a>
+            <a class="main-nav__link">фотографии</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">конкурс</a>
@@ -57,7 +57,8 @@
           <img class="main-photo" src="img/panorama-mobile@1x.jpg" alt="фото панорама">
         </picture>
         <div class="top-comment--wrapper">
-          <p class="top-comment--by"><span class="photo-name photo-name--top">Анна</span> <span class="photo-time">(5 минут
+          <p class="top-comment--by"><span class="photo-name photo-name--top">Анна</span> <span class="photo-time">(5
+              минут
               назад)</span></p>
           <p class="top-comment--comment">Прыгать или нет? Напишите в коментарии свой совет
             и смотрите
@@ -217,6 +218,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

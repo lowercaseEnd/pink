@@ -43,13 +43,13 @@ img {
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 .main-nav {
@@ -95,11 +95,11 @@ img {
   text-decoration: none;
 }
 
-.main-nav__link:hover {
+.main-nav__item a[href]:hover {
   color: #d22856;
 }
 
-.main-nav__link:active {
+.main-nav__item:active {
   color: rgba(210, 40, 86, 0.3);
 }
 

@@ -12,6 +12,7 @@ let moveTopMain = document.querySelector(".main-content");
 formBG.classList.add("listen-nav--closed");
 //move main content up
 moveTopMain.classList.add("main-content--move-top");
+navMain.classList.remove("nav--nojs");
 
 navToggle.addEventListener("click", function() {
   if(navToggle.classList.contains("header__toggle--closed")) {

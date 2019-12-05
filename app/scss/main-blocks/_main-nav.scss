@@ -48,10 +48,10 @@
 .main-nav__link {
   text-decoration: none;
 }
-.main-nav__link:hover {
+.main-nav__item a[href]:hover {
   color: $pink-color;
 }
-.main-nav__link:active {
+.main-nav__item:active {
   color: $pink-color-rgba;
 }
 
