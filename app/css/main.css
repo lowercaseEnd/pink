@@ -1043,6 +1043,11 @@ img {
   background: rgba(40, 54, 69, 0.3);
 }
 
+.listen-nav--closed .main-nav__item,
+.listen-nav--closed .header-wrapper-logo {
+  border: none;
+}
+
 .header__toggle--closed::before {
   content: "";
   position: absolute;
@@ -2524,6 +2529,15 @@ img {
 
 .main-content--move-top {
   margin-top: -90px;
+}
+
+.main-content--move-top .page-title {
+  padding-top: 120px;
+}
+
+.main-content--move-top .award__title {
+  padding-top: 126px;
+  padding-bottom: 76px;
 }
 
 .modal {
