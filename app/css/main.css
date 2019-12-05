@@ -2349,6 +2349,14 @@ img {
   cursor: pointer;
 }
 
+.photo-editor__range:active::-webkit-slider-thumb {
+  background-color: #d22856;
+}
+
+.photo-editor__range:active::-moz-range-thumb {
+  background-color: #d22856;
+}
+
 @media (min-width: 660px) {
   .photo-editor {
     margin: initial;

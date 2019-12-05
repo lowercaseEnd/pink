@@ -130,6 +130,12 @@
   border: 2px solid $pink-color;
   cursor: pointer;
 }
+.photo-editor__range:active::-webkit-slider-thumb {
+  background-color: $pink-color;
+}
+.photo-editor__range:active::-moz-range-thumb {
+  background-color: $pink-color;
+}
 @media (min-width: $tablet-width) {
   .photo-editor {
     margin: initial;
