@@ -152,78 +152,18 @@
 }
 
 //radio buttons for app
-.apps-list__radio,
-.list-checkbox__checkbox {
-  display: none;
-}
+
 //bg color on mobile
 .forms__app-wrapper {
   width: 100%;
   background-color: #f2f2f2;
 }
-.apps-list {
-  margin: 0;
-  padding: 0;
-  padding-left: 30%;
-}
 
-.apps-list__item {
-  margin-bottom: 60px;
-}
-.apps-list__label {
-  position: relative;
-  display: inline-block;
-  width: 150px;
-  font-size: 18px;
-  line-height: 1.6;
-  color: $dark-color;
-}
-//change check buttons
-.apps-list__label::before {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 1px;
-  left: -38px;
-  border: 2px solid $border-color;
-  border-radius: 50%;
-  background-color: $white-color;
-  padding: 0;
-  margin: 0;
-}
-//different states of radio buttons
-.apps-list__label:hover::before {
-  border-color: $dark-color;
-}
-
-.apps-list__label:active::before {
-  border-color: $pink-color;
-}
-.apps-list__radio:checked ~ .apps-list__label::after {
-  content: "";
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  display: block;
-  top: 8px;
-  left: -31px;
-  background-color: $pink-color;
-  border-radius: 50%;
-}
-.apps-list__radio:hover {
-  border-color: $dark-color;
-}
 @media (min-width: $tablet-width) {
   .forms__app-wrapper {
     background-color: $white-color;
     order: -1;
   }
-  .apps-list {
-    padding-left: 16%;
-  }
-
   .forms__app {
     margin: 0 auto;
     width: 616px;
@@ -242,58 +182,10 @@
     height: 300px;
     // order: -1;
   }
-  .apps-list {
-    padding-left: 26%;
-  }
 }
 
-//checkboxes
-.list-checkbox {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  margin: 0 auto;
-}
-
-.list-checkbox__item {
-  margin-bottom: 60px;
-}
-.forms__adventures--wrapper {
-  width: 100%;
-  background-color: #f2f2f2;
-}
-.list-checkbox__label {
-  position: relative;
-}
-.list-checkbox__label::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: -10px;
-  left: -60px;
-  width: 35px;
-  height: 35px;
-  background-color: $white-color;
-  border: 2px solid $border-color;
-}
-//different states of checkboxes
-.list-checkbox__label:hover::before {
-  border-color: $dark-color;
-}
-.list-checkbox__label:active::before {
-  border-color: $pink-color;
-}
-
-.list-checkbox__checkbox:checked ~ .list-checkbox__label::before {
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-size: inherit;
-  background-position: 5px 7px;
-}
+//checkbox
 @media (min-width: $tablet-width) {
-  .list-checkbox {
-    padding-top: 30px;
-  }
   .forms__adventures--wrapper {
     background-color: $white-color;
     order: 1;
@@ -306,14 +198,6 @@
   }
 }
 @media (min-width: $desktop-width) {
-  .list-checkbox {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 820px;
-  }
-  .list-checkbox__item {
-    width: 260px;
-  }
   .forms__adventures {
     width: 936px;
     height: 260px;
@@ -500,6 +384,17 @@
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
+}
+//different states of the button
+.forms__submit--button:hover {
+  background-color: #1c9b5e;
+}
+.forms__submit--button:active {
+  background-color: #1c9b5e;
+  color: rgba(255, 255, 255, 0.3);
+}
+.forms__submit--button:disabled {
+  background-color: $border-color;
 }
 .forms__important--fields {
   width: 180px;
