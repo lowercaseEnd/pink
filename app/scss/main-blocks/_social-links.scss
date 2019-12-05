@@ -1,4 +1,4 @@
-@import '../variables';
+@import "../variables";
 
 .links-forms {
   display: block;
@@ -30,6 +30,16 @@
 .media-list__item:active {
   opacity: 0.1;
 }
+
+.segment {
+  fill: $pink-color;
+}
+.segment:active {
+  opacity: 0.3;
+}
+.segment--academy:hover {
+  fill: $dark-color;
+}
 //change size so that links look same
 .media-list__item:nth-child(1) {
   padding: 19px 13px 13px 14px;
@@ -59,8 +69,6 @@
     font-size: 14px;
     color: $dark-color;
   }
-  
-  
 }
 
 @media (min-width: $desktop-width) {

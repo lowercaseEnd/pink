@@ -1206,6 +1206,18 @@ img {
   opacity: 0.1;
 }
 
+.segment {
+  fill: #d22856;
+}
+
+.segment:active {
+  opacity: 0.3;
+}
+
+.segment--academy:hover {
+  fill: #283645;
+}
+
 .media-list__item:nth-child(1) {
   padding: 19px 13px 13px 14px;
 }
