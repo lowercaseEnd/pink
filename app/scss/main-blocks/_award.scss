@@ -7,6 +7,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 //text under nav
 .award__title {
@@ -24,6 +27,9 @@
   .award {
     background-image: url("../img/bg-back-tablet.jpg");
     background-position-y: -61px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
   .award__title {
     width: 620px;
@@ -38,6 +44,9 @@
     background-position: top;
     padding-top: 120px;
     margin-top: -110px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
   .award__title {
     width: 780px;

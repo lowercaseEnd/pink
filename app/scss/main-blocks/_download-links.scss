@@ -7,6 +7,10 @@
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat center,
   url("../img/bg-back-mobile.jpg") no-repeat top $dark-color;
   background-size: auto, contain;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png") no-repeat center,
+    url("../img/bg-back-mobile@2x.jpg") no-repeat top $dark-color;
+  }
 }
 //display text on the left of the bg image at the top
 @media (min-width: $tablet-width) {
@@ -21,6 +25,10 @@
     padding-top: 120px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet.jpg") no-repeat center $dark-color;
     background-size: auto, cover;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png") no-repeat center,
+      url("../img/bg-back-tablet@2x.jpg") no-repeat top $dark-color;
+    }
   }
   .download-links-wrapper {
     width: 310px;
@@ -34,6 +42,10 @@
   padding-top: 170px;
   background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop.jpg") no-repeat center $dark-color;// lighten($color: $dark-color, $amount: 1);
   // background-blend-mode: normal;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-desktop@2x.png") no-repeat center,
+    url("../img/bg-back-desktop@2x.jpg") no-repeat top $dark-color;
+  }
   background-size: auto, cover;
  } 
  .download-links-wrapper {
