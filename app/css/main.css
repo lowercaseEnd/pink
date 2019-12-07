@@ -814,14 +814,14 @@ img {
 }
 
 .offers-table__item-ok {
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes-table.svg");
   background-repeat: no-repeat;
   background-position: 210px center;
   background-size: 31px 21px;
 }
 
 .offers-table__item-no {
-  background-image: url("../img/icon-no.svg");
+  background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-position: 210px center;
   background-size: 27px 26px;
