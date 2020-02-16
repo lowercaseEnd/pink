@@ -53,14 +53,14 @@
         на
         вашу
         бонусную карту! <span class="forms-section__invitation--tablet">Пожалуйста, заполните форму ниже:</span></p>
-      <form class="forms-section__fields forms" action="/echo" method="post">
+      <form class="forms-section__fields forms" action="" method="post">
         <fieldset class="forms__container forms__name">
           <legend class="visually-hidden">Имя</legend>
           <div class="forms__name-wrapper">
-            <label class="forms__label forms__name--label" for="surname">Фамилия:</label>
-            <input type="text" class=" forms__input forms__input--name" id="surname" placeholder="Укажите фамилию *">
+            <label class="forms__label forms__name--labelt" for="surname">Фамилия:</label>
+            <input type="text" class=" forms__input forms__input--name forms--important" id="surname" placeholder="Укажите фамилию *">
             <label class="forms__label forms__name--label" for="name">Имя:</label>
-            <input type="text" class="forms__input forms__input--name" id="name" placeholder="Введите ваше имя *">
+            <input type="text" class="forms__input forms__input--name forms--important" id="name" placeholder="Введите ваше имя *">
             <label class="forms__label forms__name--label" for="fathers-name">Отчество:</label>
             <input type="text" class="forms__input forms__input--name" id="fathers-name"
               placeholder="Ну и отчество тоже">
@@ -103,7 +103,7 @@
             <label class="forms__label forms__contacts--label" for="phone">Номер телефона</label>
             <input type="number" class="forms__input forms__input--contact " id="phone" placeholder="Номер, пожалуйста">
             <label class="forms__label forms__contacts--label" for="mail">Адрес почты</label>
-            <input type="email" class="forms__input forms__input--contact" id="mail" placeholder="Введите почту *">
+            <input type="email" class="forms__input forms__input--contact forms--important" id="mail" placeholder="Введите почту *">
           </div>
         </fieldset>
         <div class="forms__app-wrapper">
@@ -197,7 +197,7 @@
       скорее всего вы забыли их заполнить
     </p>
     <div class="color-wrapper color-wrapper--failure">
-      <button type="button" class="modal__button">Ок</button>
+      <button type="button" class="modal__button modal__button--failure">Ок</button>
     </div>
   </section>
   <section class="modal modal--success">
@@ -211,6 +211,7 @@
     </div>
   </section>
   <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

@@ -2659,6 +2659,13 @@ img {
   background-color: #ffffff;
 }
 
+.modal-show {
+  display: block;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+}
+
 .report {
   display: block;
   font-size: 18px;
