@@ -22,28 +22,41 @@
   .research-container {
     background-color: $white-color;
     width: 100%;
-    background: url("../img/research-bgr.svg") no-repeat;
-    background-position: 25% 60px;
-    background-size: 238px 277px;
+    // background: url("../img/research-bgr.svg") no-repeat;
+    // background-position: 25% 60px;
+    // background-size: 238px 277px;
     padding: 90px 0;
+  }
+  .app-features__research {
+    position: relative;
+  }
+  .app-features__research::before {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    top: -80px;
+    left: -340px;
+    background: url("../img/research-bgr.svg") no-repeat;
+    background-size: 90%;
   }
   .research-wrapper {
     display: block;
     width: 300px;
-    margin-left: auto;
+    margin-left: 50%;
   }
-  .app-features__reasearch-title {
+  .app-features__research-title {
     font-size: 30px;
     font-weight: lighter;
     line-height: 1.2;
     color: $black-color;
   }
   .app-features__learn-more,
-  .app-features__reasearch {
+  .app-features__research {
     font-size: 14px;
     line-height: 1.7;
   }
-  .app-features__reasearch {
+  .app-features__research {
     color: $dark-color;
   }
   .app-features__learn-more {
@@ -51,6 +64,13 @@
   }
 }
 @media (min-width: $desktop-width) {
+  .app-features__research::before {
+    width: 298px;
+    height: 345px;
+    background-size: 70%;
+    left: -270px;
+    top: -120px;
+  }
   .info-container {
     min-height: 350px;
   }
