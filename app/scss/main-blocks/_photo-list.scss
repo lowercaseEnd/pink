@@ -60,7 +60,28 @@
 .main-photo {
   display: block;
   width: 100%;
+  height: -moz-max-content;
   height: fit-content;
+}
+//firefox only
+@-moz-document url-prefix() {
+  .main-photo {
+    height: 138px;
+  }
+}
+@media (min-width: $tablet-width) {
+  @-moz-document url-prefix() {
+    .main-photo {
+      height: 509px;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  @-moz-document url-prefix() {
+    .main-photo {
+      height: 506px;
+    }
+  }
 }
 //comment on the top right of the photo
 .photo-name--top {

@@ -2137,9 +2137,29 @@ img {
 .main-photo {
   display: block;
   width: 100%;
+  height: -moz-max-content;
   height: fit-content;
 }
 
+@-moz-document url-prefix() {
+  .main-photo {
+    height: 138px;
+  }
+}
+@media (min-width: 660px) {
+  @-moz-document url-prefix() {
+    .main-photo {
+      height: 509px;
+    }
+  }
+}
+@media (min-width: 960px) {
+  @-moz-document url-prefix() {
+    .main-photo {
+      height: 506px;
+    }
+  }
+}
 .photo-name--top {
   position: relative;
 }
