@@ -1,0 +1,12 @@
+@import "../variables";
+
+
+.segment {
+  fill: $pink-color;
+}
+.segment:active {
+  opacity: 0.3;
+}
+.segment--academy:hover {
+  fill: $dark-color;
+}
