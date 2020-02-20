@@ -18,7 +18,8 @@
           <picture class="main-header__logo">
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg 1x">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg 1x">
-            <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения" width="75" height="22">
+            <img class="main-header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения" width="75"
+              height="22">
           </picture>
 
         </a>
@@ -57,7 +58,8 @@
           img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x,
           img/panorama-desktop@2x.jpg 2x">
-          <img class="main-photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="фото панорама">
+          <img class="main-photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+            alt="фото панорама">
         </picture>
         <div class="top-comment--wrapper">
           <p class="top-comment--by"><span class="photo-name photo-name--top">Анна</span> <span class="photo-time">(5
@@ -169,7 +171,8 @@
           img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x,
           img/photo-road-tablet@2x.jpg 2x">
-          <img class="editor__photo" src="img/photo-road-mobile@1x.jpg" alt="Обработка фото" srcset="img/photo-road-mobile@2x.jpg 2x">
+          <img class="editor__photo" src="img/photo-road-mobile@1x.jpg" alt="Обработка фото"
+            srcset="img/photo-road-mobile@2x.jpg 2x">
         </picture>
         <form action="" method="get" class="photo-editor editor__form">
           <fieldset class="photo-editor--wrapper photo-editor__size">
@@ -177,7 +180,14 @@
             <div class="control-wrapper">
               <input type="radio" name="editor" id="size" class="photo-editor__radio photo-editor__radio--size" checked>
               <input class="photo-editor__range photo-editor__range--size" type="range" name="range--size">
-              <label class="photo-editor__label photo-editor__label--size" for="size" title="Размер фото"></label>
+              <label for="size" title="Размер фото">
+                <svg class="photo-editor__label photo-editor__label--size" version="1.0"
+                  xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                  <path fill="none" d="M0 0h48v48H0V0z" />
+                  <path class="photo-editor__label"
+                    d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z" />
+                </svg>
+              </label>
             </div>
           </fieldset>
           <fieldset class="photo-editor--wrapper photo-editor__color">
@@ -185,7 +195,14 @@
             <div class="control-wrapper">
               <input type="radio" name="editor" id="color" class="photo-editor__radio photo-editor__radio--color">
               <input class="photo-editor__range photo-editor__range--color" type="range" name="range--color">
-              <label class="photo-editor__label photo-editor__label--color" for="color" title="Цвет фото"></label>
+              <label for="color" title="Цвет фото">
+                <svg class="photo-editor__label photo-editor__label--color" version="1.0"
+                  xmlns="http://www.w3.org/2000/svg" width="48" height="48"  viewBox="0 0 48 48">
+                  <path class="photo-editor__label" fill="none" d="M0 0h48v48H0V0z" />
+                  <path class="photo-editor__label"
+                    d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z" />
+                </svg>
+              </label>
             </div>
           </fieldset>
           <fieldset class="photo-editor--wrapper photo-editor__bright">
@@ -193,7 +210,13 @@
             <div class="control-wrapper">
               <input type="radio" name="editor" id="bright" class="photo-editor__radio photo-editor__radio--bright">
               <input class="photo-editor__range photo-editor__range--bright" type="range" name="range--bright">
-              <label class="photo-editor__label photo-editor__label--bright" for="bright" title="Яркость фото"></label>
+              <label for="bright" title="Яркость фото">
+                <svg class="photo-editor__label photo-editor__label--bright" version="1.0"
+                  xmlns="http://www.w3.org/2000/svg" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92">
+                  <path class="photo-editor__label" fill="#231F20"
+                    d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z" />
+                  <path class="photo-editor__label" d="M-19.462 16.331a8.519 8.519 0 008.52-8.52 8.518 8.518 0 00-8.52-8.519" /></svg>
+              </label>
             </div>
           </fieldset>
           <fieldset class="photo-editor--wrapper photo-editor__send">

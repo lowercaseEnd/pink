@@ -2408,31 +2408,32 @@ img {
 }
 
 .photo-editor__label {
-  display: inline-block;
-  opacity: 0.9;
-  background-repeat: no-repeat;
+  opacity: 0.3;
   cursor: pointer;
-  background-size: contain;
+}
+
+.photo-editor__label:hover {
+  opacity: 0.5;
+}
+
+.photo-editor__label:active {
+  fill: #d22856;
+  opacity: 1;
 }
 
 .photo-editor__label--bright {
   width: 32px;
   height: 38px;
-  background-image: url("../img/icon-editor-contrast.svg");
-  background-position: 0 center;
 }
 
 .photo-editor__label--color {
   width: 48px;
   height: 43px;
-  background-image: url("../img/icon-editor-fill.svg");
 }
 
 .photo-editor__label--size {
   width: 44px;
   height: 44px;
-  background-image: url("../img/icon-editor-crop.svg");
-  background-position: center;
 }
 
 @media (min-width: 660px) {
