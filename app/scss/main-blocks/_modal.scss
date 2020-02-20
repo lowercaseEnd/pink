@@ -5,7 +5,7 @@
 .modal {
   display: none;
   
-  width: 300px;
+  width: 320px;
   min-height: 290px;
 
   margin: 0 auto;
@@ -13,12 +13,14 @@
   text-align: center;
 
   background-color: $white-color;
+
+  box-shadow: -1px 3px 5px 3px rgba(0, 1, 1, 0.15);
 }
 .modal-show {
   display: block;
   position: fixed;
   top: 20%;
-  left: 30%;
+  left: 25%;
 }
 //text in modal
 .report {
@@ -29,13 +31,14 @@
   color: $black-color;
 
   padding-bottom: 40px;
+  margin-top: 30px;
 }
 .modal__text {
   font-size: 14px;
   line-height: 1.7;
   color: $dark-color;
 
-  width: 300px;
+  width: 250px;
 
   padding-bottom: 40px;
   margin: 0 auto;
@@ -55,28 +58,33 @@
 
   border: none;
   border-radius: 2px;
-}
 
-@media (min-width: $tablet-width) {
-  .report {
-    font-size: 30px;
-  }
-  .modal__text {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .modal {
-    width: 720px;
-    box-shadow: -1px 3px 5px 3px rgba(0, 1, 1, 0.15);
-  }
+  margin-bottom: 20px;
+}
   //bgcolor on success modal
   .color-wrapper--success {
     background-color: $bg-color;
 
     width: 100%;
 
-    padding: 30px;
+    padding: 20px;
   }
+@media (min-width: $tablet-width) {
+  .report {
+    font-size: 30px;
+    width: 330px;
+
+  }
+  .modal__text {
+    font-size: 18px;
+    line-height: 1.3;
+    width: 310px;
+  }
+  .modal {
+    width: 420px;
+
+  }
+
 }
 @media (min-width: $desktop-width) {
   .color-wrapper {
@@ -88,5 +96,11 @@
   }
   .modal__button--success {
     width: 456px;
+  }
+  .modal {
+    width: 720px;
+  }
+  .modal__text {
+    width: 340px;
   }
 }

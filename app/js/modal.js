@@ -16,7 +16,7 @@ submit.addEventListener("click", (event) => {
       break;
     }
   }
-  if(!modalFailure.classList.contains("modal-show")) {
+  if(!modalFail.classList.contains("modal-show")) {
     modalSuccess.classList.add("modal-show");
   }
 });

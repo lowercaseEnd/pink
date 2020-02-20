@@ -126,9 +126,9 @@
     opacity: 0.3;
     background-repeat: no-repeat;
   }
-  .input-comment1:checked ~ .comments-list li:nth-child(1)::before,
-  .input-comment2:checked ~ .comments-list li:nth-child(2)::before,
-  .input-comment3:checked ~ .comments-list li:nth-child(3)::before {
+  .input-comment1 ~ .comments-list li:nth-child(1)::before,
+  .input-comment2 ~ .comments-list li:nth-child(2)::before,
+  .input-comment3 ~ .comments-list li:nth-child(3)::before {
     position: absolute;
     content: "";
     width: 22px;
@@ -138,10 +138,12 @@
     top: 0;
     left: 18%;
     background-size: 22px 41px;
+    opacity: 0.3;
   }
-  .input-comment1:checked ~ .comments-list li:nth-child(1)::after,
-  .input-comment2:checked ~ .comments-list li:nth-child(2)::after,
-  .input-comment3:checked ~ .comments-list li:nth-child(3)::after {
+ 
+  .input-comment1 ~ .comments-list li:nth-child(1)::after,
+  .input-comment2 ~ .comments-list li:nth-child(2)::after,
+  .input-comment3 ~ .comments-list li:nth-child(3)::after {
     position: absolute;
     content: "";
     width: 22px;
@@ -151,6 +153,28 @@
     top: 0;
     left: 78%;
     background-size: 22px 41px;
+    opacity: 0.3;
+  }
+  //hover and active
+  .input-comment1 ~ .comments-list li:nth-child(1):hover::before,
+  .input-comment2 ~ .comments-list li:nth-child(2):hover::before,
+  .input-comment3 ~ .comments-list li:nth-child(3):hover::before { 
+    opacity: 0.6;
+  }
+  .input-comment1 ~ .comments-list li:nth-child(1):hover::after,
+  .input-comment2 ~ .comments-list li:nth-child(2):hover::after,
+  .input-comment3 ~ .comments-list li:nth-child(3):hover::after  { 
+    opacity: 0.6;
+  }
+  .input-comment1 ~ .comments-list li:nth-child(1):active::before,
+  .input-comment2 ~ .comments-list li:nth-child(2):active::before,
+  .input-comment3 ~ .comments-list li:nth-child(3):active::before { 
+    opacity: 0.1;
+  }
+  .input-comment1 ~ .comments-list li:nth-child(1):active::after,
+  .input-comment2 ~ .comments-list li:nth-child(2):active::after,
+  .input-comment3 ~ .comments-list li:nth-child(3):active::after  { 
+    opacity: 0.1;
   }
   .comments-list {
     margin-top: 200px;
