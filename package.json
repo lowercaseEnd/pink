@@ -13,7 +13,7 @@
   "author": "John Doe",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "postcss-cli": "^6.1.3"
   },
   "devDependencies": {
